@@ -1,0 +1,1401 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>BevyBar ~ General ~ Shopify</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="icon" sizes="192x192" href="//cdn.shopify.com/s/assets/touch-icons/touch-icon-192x192-840b11274adbc510a1db23976759bd31ceee84ddbb36478d494a3a2cf19b5ae6.png">
+<link rel="shortcut icon" type="image/x-icon" href="//cdn.shopify.com/s/assets/favicon-4425e7970f1327bc362265f54e8c9c6a4e96385b3987760637977078e28ffe92.png" />
+<link rel="apple-touch-startup-image" href="//cdn.shopify.com/s/assets/touch-icons/mobile-startup-564eed49b6c483b80796f529e05b4bf1d54e9cd9beeb0bb89b10d3c6a2282ea6.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="//cdn.shopify.com/s/assets/touch-icons/icon-114x114-precomposed-79d1c57f01b233f016319dc4048d90524e9ce252c058a306ef9db2216ab26911.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="//cdn.shopify.com/s/assets/touch-icons/icon-72x72-precomposed-584c35aa679456ab4e2f1cd971191498d7fecf7321b4ded8bae5c5a2c51176e3.png">
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="//cdn.shopify.com/s/assets/touch-icons/icon-57x57-precomposed-49c0927bd56de30bc28439aed87097b7c8e41f2bb4f00661f01a00729c2a1b77.png">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="CxYO4I45veAzSqulbMPFoKH1GF+VBdSFCvFKirPkJH7KvYaEgbwJFPdNUV/2kJfKU51cI6oS7WTvKTfc5QiB7g==" />
+
+  <link rel="stylesheet" media="all" href="//cdn.shopify.com/s/assets/admin/style-4c06f1441ab99e67cb05a7e395c7d8ec4ffbe3e694398f4cf2dce5d442dd7c29.css" crossorigin="anonymous" data-turbolinks-track="true" integrity="sha256-TAbxRBq5nmfLBafjlcfY7E/74+aUOY9M8tzl1ELdfCk=" />
+  <link rel="stylesheet" media="print" href="//cdn.shopify.com/s/assets/admin/print-53ef50143230c84fe7af77612901bab82abe2a49b97f64c7e78e71e6c9a7eaf7.css" crossorigin="anonymous" data-turbolinks-track="true" integrity="sha256-U+9QFDIwyE/nr3dhKQG6uCq+Kkm5f2TH545x5smn6vc=" />
+
+  <meta name="shopify-admin-context" content="{&quot;shop&quot;:{&quot;settings&quot;:{&quot;shopName&quot;:&quot;BevyBar&quot;,&quot;timezone&quot;:&quot;(GMT-03:00) Buenos Aires&quot;,&quot;timezone_offset&quot;:-180,&quot;timezone_abbreviation&quot;:&quot;ART&quot;,&quot;tzinfo&quot;:&quot;America\/Argentina\/Buenos_Aires&quot;,&quot;currency&quot;:&quot;ARS&quot;,&quot;money_format&quot;:&quot;${{amount_with_comma_separator}}&quot;,&quot;money_symbol&quot;:&quot;$&quot;,&quot;money_with_currency_format&quot;:&quot;${{amount_with_comma_separator}} ARS&quot;,&quot;created_at&quot;:&quot;2015-12-22T14:27:07-03:00&quot;,&quot;defaultWeightUnit&quot;:&quot;kg&quot;},&quot;domain&quot;:&quot;www.bevybar.com.ar&quot;},&quot;currentUser&quot;:{&quot;id&quot;:59566467,&quot;name&quot;:&quot;Thomas Reggi&quot;,&quot;email&quot;:&quot;thomas.reggi@ab-inbev.com&quot;,&quot;accountOwner&quot;:false,&quot;accountAccess&quot;:&quot;Full access&quot;,&quot;permissions&quot;:[&quot;full&quot;],&quot;isEmployee&quot;:false},&quot;argusUrl&quot;:&quot;wss:\/\/argus.ash.shopify.io\/11035152\/register?token=WzE0Njk2MjAzNjcsIjExMDM1MTUyIixbImZ1bGwiXV0%3D--c7e105885996b18ed4d70321e663812b21b1e7dc&quot;,&quot;detectBrowser&quot;:false}" />
+
+  <script src="https://dme0ih8comzn4.cloudfront.net/imaging/v1/editor.js"></script>
+    <script src="https://checkout.shopifycs.com/dist/card_fields.js" data-turbolinks-track="true"></script>
+
+<script src="//cdn.shopify.com/s/assets/admin/admin_jquery-cd3494ca5d142d833b1719529432f7ed54a4de79e211f8603a979c0cd40d191b.js" data-turbolinks-track="true" crossorigin="anonymous" integrity="sha256-zTSUyl0ULYM7FxlSlDL37VSk3nniEfhgOpecDNQNGRs="></script>
+<script src="//cdn.shopify.com/s/assets/admin/admin_vendors-6d1c0e9cd527fe2099b645d550c1f336c9fdba55d978a96584c4d86a5d2a5a30.js" data-turbolinks-track="true" crossorigin="anonymous" integrity="sha256-bRwOnNUn/iCZtkXVUMHzNsn9ulXZeKllhMTYal0qWjA="></script>
+<script src="//cdn.shopify.com/s/assets/admin/index-98e44a3bc4726b56b8de38471dc00e3eb9451d3a8913ccdefb40b0630fe88d62.js" data-turbolinks-track="true" crossorigin="anonymous" integrity="sha256-mORKO8Rya1a43jhHHcAOPrlFHTqJE8ze+0CwYw/ojWI="></script>
+
+  <script>
+//<![CDATA[
+
+  $.extend(Shopify.shop, {
+    feature_set: {
+      channels_ia: false,
+      channels_nav: true
+    }
+  });
+
+//]]>
+</script>
+
+
+
+</head>
+
+<body class="page-settings/general-show next-ui"
+
+  id="body-content">
+  <noscript>
+    <div class="modal-bg visible">
+      <div class="modal">
+        <header><h2>Please enable JavaScript</h2></header>
+        <div class="body">
+          <p class="sb">
+            Shopify requires JavaScript (and a modern browser) to run. We recommend the latest version of Chrome, Safari, Firefox, or Internet Explorer. <strong>Please enable JavaScript and refresh this page.</strong>
+          </p>
+          <p><a href="http://www.enable-javascript.com/">Learn how to enable JavaScript in your browser</a>.</p>
+        </div>
+      </div>
+    </div>
+  </noscript>
+
+  <a href="#content" class="btn btn-primary btn-large btn-skip helper--visually-hidden-focusable js-btn-skip">Skip to content</a>
+
+  <div class="nav-drawer"
+    data-define="{ navDrawer: new Shopify.Drawer(this) }"
+    data-tg-static
+    id="NavDrawer">
+    <div class="next-nav next-nav--is-expanded"
+  data-bind-class="{ 'next-nav--show-overflow': globalSearch.expanded }"
+  data-bind-event-mouseenter="nextNavigation.onMouseEnter(this)"
+  data-bind-event-mouseleave="nextNavigation.onMouseLeave(this)"
+  data-define="{ nextNavigation: new Shopify.NextNavigation(this) }"
+  id="NextNavigation">
+
+  <div class="next-nav__panel next-nav__panel--primary" data-bind-event-mouseenter="nextNavigation.onMouseEnter(this)">
+    <header role="banner" class="next-nav__logo next-nav__logo--shopify-plus">
+  <h1>
+    <a href="/admin"><span role="img" class="ui-inline-svg"><svg class="next-nav__svg-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 191 40" version="1.1"><title id="shopify-plus-logo-color-title">Shopify Plus</title><path d="M183.8 19.6c-2.6-1-5-1.9-4.5-4.2.2-1.2 1.2-3.2 5.1-3.2 2.2 0 3.6.6 4.8 2.1.2.3.5.3.6.3.5 0 1-.4 1.1-.9.1-.3 0-.4-.1-.7-1.2-1.8-3.3-2.6-6-2.6-4 0-6.9 1.9-7.5 5.1-.7 3.8 2.6 5 5.5 6.1 2.5 1 4.9 1.9 4.5 4.2-.6 3.2-4 3.7-6 3.7-2.7 0-4.4-.7-5.6-2.5-.2-.2-.4-.3-.6-.3-.4 0-1 .4-1.1.9-.1.3 0 .4.1.6.8 1.5 3.2 3 6.9 3 4.6 0 7.7-2.1 8.4-5.6.6-3.7-2.7-4.9-5.6-6z" fill="#c39e47"/><path d="M175.9 13.6h-2.1l.4-2.1c.1-.6-.3-1-.8-1s-1.1.5-1.2 1l-.4 2.1h-2.1c-.6 0-1.1.5-1.2 1-.1.5.3 1 .8 1h2.1l-.4 2.1c-.1.5.3 1 .8 1s1.1-.5 1.2-1l.4-2.1h2.1c.5 0 1.1-.5 1.2-1 .1-.5-.3-1-.8-1z" fill="#fff"/><path d="M171.5 20.3c-.6 0-1.1.5-1.2 1l-.4 2c-1 5.3-4.2 6-7.2 6-5.3 0-5.5-3-4.9-6l2.3-11.8c.1-.6-.3-1-.8-1s-1.1.5-1.2 1l-2.3 11.8c-.5 2.4-.3 4.2.5 5.4 1 1.6 3 2.4 6 2.4s5.4-.8 7-2.4c1.3-1.3 2.1-3.1 2.6-5.4l.4-2c.1-.6-.3-1-.8-1zM151.2 29.1c-1.2 0-2.2-.4-1.7-3.1l4.8-25c.1-.6-.3-1-.8-1s-1.1.5-1.2 1l-4.8 25.1c-.6 3.2.6 4.9 3.3 4.9.5 0 1-.4 1.1-.9.1-.6-.2-1-.7-1zM138.1 10.2c-3 0-5.4 1-7.1 3l.3-1.7c.1-.6-.3-1-.8-1s-1.1.5-1.2 1l-5.1 26.6c-.1.5.3 1 .8 1s1.1-.5 1.2-1l1.9-9.9c.7 1.3 2.3 3 6 3 2.8 0 5.2-.9 7.1-2.6 1.9-1.8 3.2-4.4 3.9-7.9.7-3.5.4-6.1-.9-7.9-1.2-1.7-3.2-2.6-6.1-2.6zm-7.8 4.6c.1-.1.1-.2.2-.3 0 .1-.1.2-.2.3zm-1.9 13.1c.1.1.2.3.3.4-.1-.1-.2-.3-.3-.4zm6.1 1.4c-4.3 0-6-3-5-8.6 1.1-5.7 3.8-8.6 8.2-8.6 4.7 0 6.5 2.8 5.3 8.6-1.1 5.9-3.9 8.6-8.5 8.6z" fill="#c39e47"/><path class="next-nav__svg-logo-text" d="M2.4 25.6c1 .5 2.9 1.3 4.7 1.2 1.6 0 2.5-.9 2.5-2 0-1-.6-1.7-2.4-2.7-2.2-1.2-3.8-3-3.8-5.3 0-4 3.5-6.9 8.5-6.9 2.2 0 3.9.4 4.8 1L15.4 15c-.8-.4-2.1-.8-3.6-.8-1.6 0-2.7.7-2.7 1.9 0 .9.7 1.6 2.2 2.4 2.2 1.3 4.1 3 4.1 5.5 0 4.6-3.7 7.2-8.9 7.1-2.4 0-4.6-.7-5.7-1.4l1.6-4.1zM16.7 31l5.6-29.1H28l-2.2 11.3.1-.1c1.5-1.8 3.5-3.1 6.1-3.1 3 0 4.7 1.9 4.7 5.2 0 1-.2 2.6-.4 3.9L34 31h-5.7l2.2-11.6c.2-.8.2-1.8.2-2.6 0-1.2-.5-2.2-1.8-2.2-1.8 0-3.8 2.4-4.5 6.2l-2 10.2h-5.7zm40.7-13c0 7.1-4.6 13.2-11.4 13.2-5.2 0-7.9-3.6-7.9-8 0-6.9 4.6-13.2 11.5-13.2 5.4-.1 7.8 3.8 7.8 8zM44 23c0 2.1.8 3.7 2.8 3.7 3 0 4.7-5.4 4.7-8.9 0-1.7-.7-3.5-2.7-3.5-3.1 0-4.8 5.4-4.8 8.7zm12 16.1l4-21c.5-2.4.9-5.4 1.2-7.6h5.1l-.3 3.2c1.5-2.2 3.8-3.6 6.1-3.6 4.2 0 5.9 3.4 5.9 7.2 0 7-4.4 13.9-11.1 13.9-1.4 0-2.7-.2-3.4-.8h-.1L61.8 39H56v.1zM64.2 26c.6.5 1.3.8 2.4.8 3.2 0 5.4-5.3 5.4-9 0-1.5-.5-3.2-2.3-3.2-2 0-3.9 2.4-4.5 5.9l-1 5.5zm14 5L82 10.5h5.8L83.9 31h-5.7zm7.4-22.7c-1.6 0-2.7-1.4-2.7-3.1 0-1.9 1.5-3.4 3.3-3.4 1.7 0 2.9 1.4 2.9 3-.1 2.2-1.6 3.5-3.5 3.5zM88.9 31l3-16.2h-2.7l.8-4.3h2.7l.2-1c.5-2.4 1.4-4.9 3.3-6.5 1.5-1.3 3.6-1.9 5.6-1.9 1.4 0 2.5.2 3.1.5l-1 4.4c-.5-.2-1.1-.3-1.8-.3-1.9 0-3.1 1.8-3.4 3.8l-.2 1h4l-.8 4.3h-4l-3 16.2h-5.8zm20.6-20.5l.9 9.2c.2 2 .4 3.8.5 4.8h.1c.5-1.1.9-2.7 1.7-4.9l3.5-9.1h6l-7 15c-2.5 5.2-4.9 8.9-7.5 11.4-2 1.9-4.5 2.9-5.6 3.1l-1.6-4.9c1-.3 2.2-.8 3.2-1.6 1.3-.9 2.5-2.2 3.1-3.5.2-.3.2-.5.1-.9l-3.5-18.6h6.1z" fill="#fff"/></svg></span></a>
+  </h1>
+
+    <a class="btn btn--plain tooltip tooltip-right-align tooltip-bottom tooltip-bottom--light-arrow" data-track-click="{ category: &quot;View your website&quot;, action: &quot;Next nav - header&quot; }" target="shopify_storeview" href="https://www.bevybar.com.ar/?_cd=da14bbfdd8a55d31482c36658f19156a1e227e85e1bcf943763e70d02fec2e67&amp;_uid=59566467">
+      <svg role="img" class="next-icon next-icon--size-16" aria-labelledby="next-website-8b19e69119c3692c4c6010737bbcf1aa-title"><title id="next-website-8b19e69119c3692c4c6010737bbcf1aa-title">View your online store</title><use xlink:href="#next-website" /></svg>
+      <span class="helper--visually-hidden">View your online store</span>
+      <div class="tooltip-container">
+        <span class="tooltip-label tooltip--view-website tooltip-label--light">View your online store</span>
+      </div>
+</a></header>
+
+    <section class="next-nav__search"
+  data-context="globalSearch"
+  data-define="{ globalSearch: new Shopify.GlobalSearch(this, '') }"
+  id="GlobalSearch"
+  role="search">
+  <h2>
+    <button type="button" class="next-nav__link next-nav__link--search" data-bind-event-click="toggleSearchPane()">
+      <span>
+        <svg class="next-icon next-icon--size-16 next-icon--no-nudge"><use xlink:href="#next-search-16" /></svg>
+        <span class="next-nav__text next-nav-search__text">Search</span>
+      </span>
+</button>  </h2>
+
+  <div class="global-search__pane" id="global-search-pane" role="dialog" aria-hidden="true" tabindex="-1">
+    <div class="global-search__header next-grid next-grid--vertically-centered next-grid--no-padding">
+      <div class="next-grid__cell">
+
+        <div class="next-input-wrapper global-search__input-wrapper"><label class="next-label helper--visually-hidden" for="global-search-input">Search. Your results will appear below as you type.</label><div class="next-input--stylized"><span class="next-input__add-on next-input__add-on--before"><svg class="next-icon next-icon--size-16"><use xlink:href="#next-search-16" /></svg></span><input type="search" name="global-search-input" id="global-search-input" aria-controls="GlobalSearchPaneAnnounce" data-bind-event-keydown="onSearchInputKeydown(event)" placeholder="What are you looking for?" class="next-input next-input--search next-input--invisible" /><span class="next-input__add-on next-input__add-on--after">          <svg class="next-icon next-icon--color-blue-lighter next-icon--size-16 global-search__loading animate animate-rotate hide" data-bind-show="isLoading"><use xlink:href="#loading-circle" /></svg>
+          <button name="button" type="button" class="btn btn--plain btn--icon btn--icon--tiny global-search__clear" data-bind-class="{ hide: (!searchQuery().length || isLoading) }" data-bind-event-click="clearResults(true)" aria-label="Clear search input"><svg class="next-icon next-icon--color-blue-lighter next-icon--size-16"><use xlink:href="#clear" /></svg></button>
+</span></div></div>
+      </div>
+      <div class="next-grid__cell--no-flex">
+        <button type="button" class="btn global-search__close btn--plain" data-bind-event-click="hideSearchPane()">
+          <svg role="img" class="next-icon next-icon--color-slate-lighter next-icon--size-16" aria-labelledby="next-remove-1cd149945f8ece607220f222df946231-title"><title id="next-remove-1cd149945f8ece607220f222df946231-title">Remove</title><use xlink:href="#next-remove" /></svg>
+          <span class="helper--visually-hidden">Close search dialog</span>
+</button>      </div>
+    </div>
+
+    <div class="global-search__results"
+      data-tg-refresh="global-search-pane-results"
+      id="GlobalSearchPaneResults">
+      <div class="global-search__wrapper">
+        <div class="global-search__body global-search__blank-slate">
+  <div class="global-search__blank-slate-message">
+    <p class="next-heading--1">Enter your search terms in the field above.</p>
+    <p class="next-heading--2">You can search for pretty much anything – products, orders, customers, blog posts, and more.</p>
+  </div>
+
+</div>
+<div class="global-search__footer">
+  <div class="global-search__tip">
+    <figure class="next-grid next-grid--vertically-centered next-grid--no-outside-padding">
+      <div class="next-grid__cell--no-flex">
+        <svg role="img" class="next-icon next-icon--color-blue next-icon--size-20" aria-labelledby="next-info-6dfa963c41a5d966e370133be0840043-title"><title id="next-info-6dfa963c41a5d966e370133be0840043-title">Note</title><use xlink:href="#next-info" /></svg>
+      </div>
+      <figcaption>
+        <div class="next-grid__cell">
+          You can access search faster with the <strong><code>/</code> key</strong> on your keyboard.
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+    <div id="GlobalSearchPaneAnnounce" class="helper--visually-hidden" role="status" aria-live="polite" tabindex="-1"></div>
+  </div>
+</section>
+
+    <nav role="navigation" aria-labelledby="PrimaryNavigationLabel">
+  <h2 id="PrimaryNavigationLabel" class="helper--visually-hidden">Main menu</h2>
+  <ol class="next-nav__list next-nav__list--primary">
+      <li class="next-nav__item">
+        <a class="next-nav__link" data-nav-section="home" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin">
+          <svg class="next-icon next-icon--size-16 next-icon--no-nudge" role="img" aria-labelledby="next-dashboard-16-d29659c48b06d7c3deef2472fa19b9d6-title"><title id="next-dashboard-16-d29659c48b06d7c3deef2472fa19b9d6-title">Home</title><use xlink:href="#next-dashboard-16" /></svg>
+          <span class="next-nav__text">Home</span>
+</a>      </li>
+
+      <li class="next-nav__item">
+        <a class="next-nav__link" data-nav-section="orders" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" data-secondary-nav-id="#NextNavOrders" aria-controls="NextNavOrders" href="/admin/orders">
+          <svg class="next-icon next-icon--size-16 next-icon--no-nudge" role="img" aria-labelledby="next-orders-16-f0fd32219f245b6148a6036ecfb83bda-title"><title id="next-orders-16-f0fd32219f245b6148a6036ecfb83bda-title">Orders</title><use xlink:href="#next-orders-16" /></svg>
+          <span class="next-nav__text">Orders</span>
+          <span class="next-nav__badge next-nav__badge--adjacent-chevron "
+              data-tg-refresh-always
+              id="NextNavBadgeOrders"
+              title="Open orders">
+            <span class="next-nav__badge-content">249</span>
+          </span>
+          <svg class="next-icon next-icon--size-16 next-nav__chevron next-icon--no-nudge"><use xlink:href="#next-chevron-nav" /></svg>
+</a>      </li>
+
+      <li class="next-nav__item">
+        <a class="next-nav__link" data-nav-section="products" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" data-secondary-nav-id="#NextNavProducts" aria-controls="NextNavProducts" href="/admin/products">
+          <svg class="next-icon next-icon--size-16 next-icon--no-nudge" role="img" aria-labelledby="next-products-16-b777e404235b2a2d723b472851745817-title"><title id="next-products-16-b777e404235b2a2d723b472851745817-title">Products</title><use xlink:href="#next-products-16" /></svg>
+          <span class="next-nav__text">Products</span>
+          <svg class="next-icon next-icon--size-16 next-nav__chevron next-icon--no-nudge"><use xlink:href="#next-chevron-nav" /></svg>
+</a>      </li>
+
+      <li class="next-nav__item">
+        <a class="next-nav__link" data-nav-section="customers" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/customers">
+          <svg class="next-icon next-icon--size-16 next-icon--no-nudge" role="img" aria-labelledby="next-customers-16-d42b1febe3685a6ca42b9723a3addc03-title"><title id="next-customers-16-d42b1febe3685a6ca42b9723a3addc03-title">Customers</title><use xlink:href="#next-customers-16" /></svg>
+          <span class="next-nav__text">Customers</span>
+</a>      </li>
+
+      <li class="next-nav__item">
+        <a class="next-nav__link" data-nav-section="reports" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/reports">
+          <svg class="next-icon next-icon--size-16 next-icon--no-nudge" role="img" aria-labelledby="next-reports-16-948ef9ed653e7798a44022f3a333c12a-title"><title id="next-reports-16-948ef9ed653e7798a44022f3a333c12a-title">Reports</title><use xlink:href="#next-reports-16" /></svg>
+          <span class="next-nav__text">Reports</span>
+</a>      </li>
+
+      <li class="next-nav__item">
+        <a class="next-nav__link" data-nav-section="discounts" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/discounts">
+          <svg class="next-icon next-icon--size-16 next-icon--no-nudge" role="img" aria-labelledby="next-discounts-16-f57f0a042af623c8b53b702f97919dac-title"><title id="next-discounts-16-f57f0a042af623c8b53b702f97919dac-title">Discounts</title><use xlink:href="#next-discounts-16" /></svg>
+          <span class="next-nav__text">Discounts</span>
+</a>      </li>
+
+    <li class="next-nav__item--spacer" role="presentation"></li>
+
+    <li class="next-nav__heading-item">
+      <span class="next-nav__text">Sales channels</span>
+      <button name="button" type="button" class="btn btn btn--plain" data-bind-event-click="AddChannelModal.show() || Shopify.ChannelsActivationFunnel.openChannelsModal(&#39;channels-nav&#39;)" aria-label="Add channels"><svg class="next-icon next-icon--size-16"><use xlink:href="#next-add-circle-outline" /></svg></button>
+    </li>
+
+
+  <li class="next-nav__item next-nav__item--channel">
+      <a class="next-nav__link" data-nav-section="online_store" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" data-secondary-nav-id="#NextNavOnlineStore" aria-controls="NextNavOnlineStore" href="/admin/themes">
+        <svg class="next-icon next-icon--size-16 next-icon--no-nudge" role="img" aria-labelledby="next-online-store-16-668a245e1fe95130c91233a329e9ec96-title"><title id="next-online-store-16-668a245e1fe95130c91233a329e9ec96-title">Online Store</title><use xlink:href="#next-online-store-16" /></svg>
+        <span class="next-nav__text">Online Store</span>
+        <svg class="next-icon next-icon--size-16 next-nav__chevron next-icon--no-nudge"><use xlink:href="#next-chevron-nav" /></svg>
+</a>  </li>
+
+  <li class="next-nav__item next-nav__item--channel">
+      <a class="next-nav__link" data-nav-section="pos" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" data-secondary-nav-id="#NextNavPos" aria-controls="NextNavPos" href="/admin/settings/locations">
+        <svg class="next-icon next-icon--size-16 next-icon--no-nudge" role="img" aria-labelledby="next-pos-16-a82cb3a78613abf1e5e25c4e01a1bb40-title"><title id="next-pos-16-a82cb3a78613abf1e5e25c4e01a1bb40-title">Point of Sale</title><use xlink:href="#next-pos-16" /></svg>
+        <span class="next-nav__text">Point of Sale</span>
+        <svg class="next-icon next-icon--size-16 next-nav__chevron next-icon--no-nudge"><use xlink:href="#next-chevron-nav" /></svg>
+</a>  </li>
+
+  <li class="next-nav__item next-nav__item--channel">
+      <a class="next-nav__link" data-nav-section="mobile_app" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/mobile_app">
+        <svg class="next-icon next-icon--size-16 next-icon--no-nudge" role="img" aria-labelledby="next-phone-16-fcfd66b7cac962629cb384f8671834e7-title"><title id="next-phone-16-fcfd66b7cac962629cb384f8671834e7-title">Mobile App</title><use xlink:href="#next-phone-16" /></svg>
+        <span class="next-nav__text">Mobile App</span>
+</a>  </li>
+
+
+
+    <li class="next-nav__item--flex-spacer" role="presentation"></li>
+
+    <li class="next-nav__item--divider" role="presentation"></li>
+
+      <li class="next-nav__item">
+        <a class="next-nav__link" data-nav-section="apps" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/apps">
+          <svg class="next-icon next-icon--size-16 next-icon--no-nudge" role="img" aria-labelledby="next-apps-16-6201de1618001a67cd477de4631c5078-title"><title id="next-apps-16-6201de1618001a67cd477de4631c5078-title">Apps</title><use xlink:href="#next-apps-16" /></svg>
+          <span class="next-nav__text">Apps</span>
+</a>      </li>
+
+    <li class="next-nav__item">
+      <a class="next-nav__link next-nav__link--is-selected" data-nav-section="settings" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" data-secondary-nav-id="#NextNavSettings" aria-controls="NextNavSettings" href="/admin/settings/general">
+        <svg class="next-icon next-icon--size-16 next-icon--no-nudge" role="img" aria-labelledby="next-settings-16-46243e5d65de2a7d2cabf55f59edd294-title"><title id="next-settings-16-46243e5d65de2a7d2cabf55f59edd294-title">Settings</title><use xlink:href="#next-settings-16" /></svg>
+        <span class="next-nav__text">Settings</span>
+        <svg class="next-icon next-icon--size-16 next-nav__chevron next-icon--no-nudge"><use xlink:href="#next-chevron-nav" /></svg>
+</a>    </li>
+
+    <li class="next-nav__item--divider" role="presentation"></li>
+
+    <li class="next-nav__item next-nav__item--group next-nav__item--account">
+  <div class="next-popover__container next-popover__container--full-width">
+      <button class="next-nav__link next-nav__link--avatar"
+        data-bind-event-click="nextNavigation.hover()"
+        type="button">
+        <span class="next-grid next-grid--no-outside-padding next-grid--compact next-grid--vertically-centered"
+          data-tg-refresh="next-nav__avatar"
+          id="next-nav__avatar">
+          <span class="user-avatar user-avatar--style-4">
+  <span class="user-avatar__initials">
+      TR
+  </span>
+  <img alt="" class="gravatar gravatar--size-thumb" src="https://www.gravatar.com/avatar/af4415bffe826cdb30d61a814e7ebcf2.jpg?s=60&amp;d=blank" />
+</span>
+
+          <span class="next-nav__text next-nav__text--shop-name">
+            BevyBar
+            <span class="next-nav__text--subdued next-nav__text--shop-user">Thomas Reggi</span>
+          </span>
+          <span class="next-grid__cell next-grid__cell--no-flex">
+            <svg class="next-icon next-icon--size-16 next-nav__chevron next-icon--no-nudge"><use xlink:href="#next-chevron-nav" /></svg>
+          </span>
+        </span>
+      </button>
+<div data-popover-horizontally-relative-to-closest=".next-nav__panel--primary" data-popover-preferred-position="top" class="next-popover next-popover--half-spacing"><div class="next-popover__tooltip"></div><div class="next-popover__content-wrapper"><div class="next-popover__content"><div class="next-popover__pane">
+        <div class="next-popover__section">
+      <ul class="unstyled">
+          <li>
+            <a class="next-nav__popover-link" data-bind-event-click="ShopifyChat.newChat({
+                  name: &#39;Thomas Reggi&#39;,
+                  email: &#39;thomas.reggi@ab-inbev.com&#39;,
+                  tags: &#39;origin-plus&#39;,
+                  metadata: { shop_domain: &#39;bevybar.myshopify.com&#39;}
+                });" data-track-click="{action: &quot;Shopify Plus Live Chat&quot;, category: &quot;Need Help&quot;}" href="/admin/settings">Shopify Plus Live Chat</a>
+          </li>
+        <li>
+          <a class="next-nav__popover-link" data-track-click="{action: &quot;Help Center (Manual)&quot;, category: &quot;Need Help&quot;}" target="_blank" rel="noopener noreferrer" href="//help.shopify.com/">Shopify Help Center</a>
+        </li>
+        <li>
+          <a class="next-nav__popover-link" data-track-click="{action: &quot;Shopify Forums&quot;, category: &quot;Need Help&quot;}" target="_blank" href="//ecommerce.shopify.com/forums">Community Forums</a>
+        </li>
+        <li>
+          <a class="next-nav__popover-link" data-track-click="{action: &quot;Hire Shopify Expert&quot;, category: &quot;Need Help&quot;}" target="_blank" rel="nofollow" data-method="post" href="/admin/experts/request_expert?referrer=popover&amp;return_to=hire_an_expert">Hire an Expert</a>
+        </li>
+        <li>
+          <script data-define="{keyboardShortcuts: new Shopify.Modal(this, {&quot;size&quot;:&quot;large&quot;})}" type="text/html" class="modal_source">
+            <header>
+  <h2>Keyboard Shortcuts</h2>
+  <button class="btn btn--plain close-modal">×</button>
+</header>
+
+<div class="keyboard-commands__container"
+  data-define="{ _init: Shopify.KeyboardShortcuts.buildModal(this) }">
+  <div class="next-grid">
+    <div class="next-grid__cell next-grid__cell--no-flex">
+      <h2 class="heading">General shortcuts</h2>
+      <ul class="keyboard-commands ssb js-general-shortcuts">
+        <li class="keyboard-command">
+          <span class="keyboard-key"></span>
+          <span class="keyboard-name"></span>
+        </li>
+      </ul>
+      <h2 class="heading">Adding items to your store</h2>
+      <ul class="keyboard-commands js-creation-shortcuts">
+        <li class="keyboard-command">
+          <span class="keyboard-key"></span>
+          <span class="keyboard-name"></span>
+        </li>
+      </ul>
+</div>    <div class="next-grid__cell">
+      <h2 class="heading">Navigating your admin panel</h2>
+      <ul class="keyboard-commands js-navigation-shortcuts navigating-commands">
+        <li class="keyboard-command">
+          <span class="keyboard-key"></span>
+          <span class="keyboard-name"></span>
+        </li>
+      </ul>
+</div></div></div>
+
+
+</script>          <button class="btn btn--link next-nav__popover-link"
+            data-bind-event-click="keyboardShortcuts.show()"
+            type="button">
+            Keyboard Shortcuts
+          </button>
+        </li>
+      </ul>
+</div>    <div class="next-popover__section">
+      <ul class="unstyled">
+        <li>
+          <a class="next-nav__popover-link" href="/admin/settings/account/59566467">Your Profile</a>
+        </li>
+        <li>
+          <a class="next-nav__popover-link" href="/admin/auth/logout">Log Out</a>
+        </li>
+      </ul>
+</div></div></div></div></div></div></li>
+
+
+  </ol>
+</nav>
+
+  </div>
+
+  <div class="next-nav__panel next-nav__panel--secondary" data-bind-event-mouseenter="nextNavigation.onMouseEnter(this)">
+    <nav role="navigation" aria-labelledby="SecondaryNavigationLabel">
+      <h2 id="SecondaryNavigationLabel" class="helper--visually-hidden">Secondary navigation</h2>
+        <ol hidden="hidden" class=" next-nav__list next-nav__list--secondary" data-nav-section="orders" id="NextNavOrders">
+    <li class="next-nav__item next-nav__item--header" aria-hidden="true">
+      <h3 class="next-heading--callout">Orders <span class="helper--visually-hidden">subnavigation</span></h3>
+    </li>
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="orders" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/orders">Orders</a>
+    </li>
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="drafts" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/draft_orders">Drafts</a>
+    </li>
+      <li class="next-nav__item">
+        <a class="next-nav__link" data-nav-sub-item="checkouts" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/checkouts">Abandoned checkouts</a>
+      </li>
+</ol>
+        <ol hidden="hidden" class=" next-nav__list next-nav__list--secondary" data-nav-section="products" id="NextNavProducts">
+    <li class="next-nav__item next-nav__item--header" aria-hidden="true">
+      <h3 class="next-heading--callout">Products <span class="helper--visually-hidden">subnavigation</span></h3>
+    </li>
+        <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="products" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/products">Products</a>
+    </li>
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="inventory_transfers" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/transfers">Transfers</a>
+    </li>
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="inventory" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/products/inventory">Inventory</a>
+    </li>
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="collections" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/collections">Collections</a>
+    </li>
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="gift_cards" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/gift_cards">Gift cards</a>
+    </li>
+
+</ol>
+
+          <ol hidden="hidden" class=" next-nav__list next-nav__list--secondary" data-nav-section="online_store" id="NextNavOnlineStore">
+      <li class="next-nav__item next-nav__item--header next-nav__item--view-channel">
+        <div aria-hidden="true">
+          <h3 class="next-heading--callout">Online Store <span class="helper--visually-hidden">subnavigation</span></h3>
+        </div>
+        <a class="btn btn--plain tooltip tooltip-right-align tooltip-bottom tooltip-bottom--light-arrow" data-track-click="{category: &quot;View your website&quot;, action: &quot;Next nav - sub nav&quot;}" target="shopify_storeview" title="View your online store" href="https://www.bevybar.com.ar/?_cd=da14bbfdd8a55d31482c36658f19156a1e227e85e1bcf943763e70d02fec2e67&amp;_uid=59566467"><svg class="next-icon next-icon--size-16"><use xlink:href="#next-website" /></svg>
+          <div class="tooltip-container">
+            <span class="tooltip-label tooltip--view-website tooltip-label--light">View your online store</span>
+          </div>
+</a>      </li>
+          <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="themes" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/themes">Themes</a>
+    </li>
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="blogs" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/articles">Blog Posts</a>
+    </li>
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="pages" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/pages">Pages</a>
+    </li>
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="navigation" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/links">Navigation</a>
+    </li>
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="domains" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/settings/domains">Domains</a>
+    </li>
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="online_preferences" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/online_store/preferences">Preferences</a>
+    </li>
+
+</ol>    <ol hidden="hidden" class=" next-nav__list next-nav__list--secondary" data-nav-section="pos" id="NextNavPos">
+      <li class="next-nav__item next-nav__item--header" aria-hidden="true">
+        <h3 class="next-heading--callout">Point of Sale <span class="helper--visually-hidden">subnavigation</span></h3>
+      </li>
+          <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="locations" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/settings/locations">Locations</a>
+    </li>
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="pos_preferences" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/pos/preferences">Setup</a>
+    </li>
+
+</ol>    <ol hidden="hidden" class=" next-nav__list next-nav__list--secondary" data-nav-section="mobile_app" id="NextNavMobileApp">
+      <li class="next-nav__item next-nav__item--header" aria-hidden="true">
+        <h3 class="next-heading--callout">Mobile App <span class="helper--visually-hidden">subnavigation</span></h3>
+      </li>
+
+</ol>
+
+      <ol class=" next-nav__list next-nav__list--secondary next-nav__list--is-open" data-nav-section="settings" id="NextNavSettings">
+  <li class="next-nav__item next-nav__item--header" aria-hidden="true">
+    <h3 class="next-heading--callout">Settings <span class="helper--visually-hidden">subnavigation</span></h3>
+  </li>
+  <li class="next-nav__item">
+    <a class="next-nav__link next-nav__link--is-selected" data-nav-sub-item="general" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/settings/general">General</a>
+  </li>
+  <li class="next-nav__item">
+    <a class="next-nav__link" data-nav-sub-item="payments" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/settings/payments">Payments</a>
+  </li>
+  <li class="next-nav__item">
+    <a class="next-nav__link" data-nav-sub-item="checkout" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/settings/checkout">Checkout</a>
+  </li>
+  <li class="next-nav__item">
+    <a class="next-nav__link" data-nav-sub-item="shipping" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/settings/shipping">Shipping</a>
+  </li>
+  <li class="next-nav__item">
+    <a class="next-nav__link" data-nav-sub-item="taxes" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/settings/taxes">Taxes</a>
+  </li>
+  <li class="next-nav__item">
+    <a class="next-nav__link" data-nav-sub-item="notifications" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/settings/notifications">Notifications</a>
+  </li>
+
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="gift_cards" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/settings/gift_cards">Gift cards</a>
+    </li>
+
+  <li class="next-nav__item">
+    <a class="next-nav__link" data-nav-sub-item="files" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/settings/files">Files</a>
+  </li>
+
+    <li class="next-nav__item">
+      <a class="next-nav__link" data-nav-sub-item="channels" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/channels">Sales channels</a>
+    </li>
+
+  <li class="next-nav__item">
+    <a class="next-nav__link" data-nav-sub-item="plan" data-bind-event-click="nextNavigation.goTo(event)" data-allow-default="1" href="/admin/settings/account">Account</a>
+  </li>
+
+</ol>
+      <div class="js-embedded-app-secondary-nav"></div>
+    </nav>
+
+    <nav role="navigation" aria-labelledby="TertiaryNavigationLabel">
+      <h2 id="TertiaryNavigationLabel" class="helper--visually-hidden">Tertiary navigation</h2>
+      <div class="js-embedded-app-tertiary-nav"></div>
+    </nav>
+  </div>
+
+  <div class="next-nav__panel next-nav__panel--icon-overlay"
+    data-bind-event-click="nextNavigation.setState('default')"></div>
+</div>
+
+<div data-define="nextNavigation.setSection([&quot;settings&quot;,&quot;general&quot;,null])"
+  data-tg-refresh-always
+  id="NextNavigationSetSection"></div>
+
+  </div>
+
+  <div data-define="{ AddChannelModal : new Shopify.UIModal(this) }" data-modal-context-ref-for="AddChannelModal" data-content-from="/admin/channels/modal"><div class="ui-modal" role="dialog" data-preload="false" data-start-visible="false" aria-hidden="true" aria-labelledby="AddChannelModal_heading"><div></div></div></div>
+
+  <div class="js-global-notification separate-layer "
+  data-tg-refresh-always="true"
+  id="global-notification">
+  <span class="js-global-notification-message "></span>
+  <button name="button" type="button" class="btn btn--link btn--icon close-notification" data-bind-event-click="Shopify.Flash.hide()" tabindex="-1" aria-label="Close"><svg class="next-icon next-icon--color-white next-icon--size-16"><use xlink:href="#next-remove" /></svg></button>
+</div>
+
+
+
+  <div data-tg-refresh="pos_upgrade_flow"
+    id="pos_upgrade_flow">
+  </div>
+
+  <div class="wrapper"
+    data-define="{ notifier: new Shopify.Notifications({ shopName: Shopify.shop.settings.shopName, iconPath: '//cdn.shopify.com/s/assets/admin/shopify-notification-icon-5bb71743b535cc0810f4fa447c50934f8b99a46d030d55b8467c3831c14f5c36.png' }) }"
+    id="wrapper">
+    <div id="body" class="clearfix">
+      <div class="nav-toggle">
+        <button type="button" class="btn btn--icon" aria-label="Toggle Navigation" aria-controls="NavDrawer" data-bind-event-click="navDrawer.toggle()">
+          <svg role="img" class="next-icon next-icon--color-blue next-icon--size-16" aria-labelledby="next-menu-16-76252fa52aeb5cc05eb7ed493e300287-title"><title id="next-menu-16-76252fa52aeb5cc05eb7ed493e300287-title">Toggle Navigation</title><use xlink:href="#next-menu-16" /></svg>
+        </button>
+      </div>
+
+      <main class=""
+        data-bind-event-click="navDrawer.close()"
+        id="content"
+        role="main">
+
+<script>
+  Page(function () {
+    return {
+      orderNumberExamples: function (format) {
+        var orderNumber = function(seq) {
+          return format.replace(/(.*){{\s*number\s*}}(.*)/, '$1' + '100' + seq + '$2');
+        }
+        return  orderNumber(1) + ", " + orderNumber(2) + ", " +  orderNumber(3) + " ...";
+      }
+    }
+  });
+</script>
+
+<div id="settings-general" class="page">
+  <form define="{form: new Shopify.Form(this, {disabledUntilDirty: true})}" autocomplete="off" class="edit_shop" id="edit_shop_11035152" action="/admin/settings/general" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="patch" /><input type="hidden" name="authenticity_token" value="Pla6cSks73L/EdSVqiCGe3tiMyUKbZJocIIX1ZNwI0///TIVJqlbhjsWLm8wc9QRiQp3WTV6q4mVWmqDxZyG3w==" />
+    <div class="header-row">
+      <header class="header">
+        <h1 class="header__main">
+          <svg class="next-icon next-icon--size-20 next-icon--header"><use xlink:href="#next-settings" /></svg>
+          <span class="breadcrumb"><a href="/admin/settings/general">Settings</a> / </span>
+          General
+        </h1>
+        <div class="header__primary-actions">
+          <input type="submit" name="commit" value="Save" class="btn btn-primary js-btn-primary js-btn-loadable" />
+        </div>
+      </header>
+    </div>
+
+
+
+
+
+
+  <section class="ui-annotated-section"><div class="ui-annotated-section__annotation"><div class="ui-annotated-section__title"><h2 class="next-heading next-heading--no-margin">Store details</h2></div><div class="ui-annotated-section__description"><p>Shopify and your customers will use this information to contact you.</p></div></div><div class="ui-annotated-section__content">
+    <div class="next-card">
+      <div class="section-content">
+        <div class="next-card__section">
+          <div class="ui-form__section">
+            <div class="next-input-wrapper"><label class="next-label" for="shop_name">Store name</label><input class="next-input" size="30" type="text" value="BevyBar" name="shop[name]" id="shop_name" /></div>
+
+            <div class="ui-form__group" define="{customerEmailCheck: new Shopify.BadEmailCheck(&quot;contacto@bevybar.com.ar&quot;)}" context="customerEmailCheck">
+                <div class="next-input-wrapper"><label class="next-label" for="shop_email">Account email</label><input class="next-input" aria-describedby="help-25c2892cf4959dfdae438e1ced0545c5" size="30" type="text" value="euge@bevybar.com.ar" name="shop[email]" id="shop_email" /><p id="help-25c2892cf4959dfdae438e1ced0545c5" class="next-input__help-text">We&#39;ll use this address if we need to contact you about your account.</p></div>
+
+                <div class="next-input-wrapper"><label class="next-label" for="shop_customer_email">Customer email</label><input value="contacto@bevybar.com.ar" bind="shop.customer_email" bind-event-input="checkEmail(this.value)" class="next-input" aria-describedby="help-09bfc0d226e948319b7232339efc886a" size="30" type="text" name="shop[customer_email]" id="shop_customer_email" /><p id="help-09bfc0d226e948319b7232339efc886a" class="next-input__help-text"><span bind-show='!isBadEmail'>Your customers will see this address if you email them</span><span bind-show='isBadEmail'>Email will be sent from <a href='mailto:no-reply@shopify.com'>no-reply@shopify.com</a> when you use <span bind='emailDomainFormatted()'></span> address. Customer replies will still go directly to you. For a better email experience, use a <a href="https://www.bevybar.com.ar/admin/settings/domains">custom domain</a>.</span></p></div>
+</div></div>        </div>
+      </div>
+    </div>
+</div></section>
+
+
+
+  <section class="ui-annotated-section "><div class="ui-annotated-section__annotation"><div class="ui-annotated-section__title"><h2 class="next-heading next-heading--no-margin">Store address</h2></div><div class="ui-annotated-section__description"><p>This address will appear on your invoices. You can edit the address used to calculate shipping rates in your <a href="/admin/settings/shipping">shipping settings</a>.</p></div></div><div class="ui-annotated-section__content">
+    <div class="next-card">
+      <div class="section-content">
+        <div class="next-card__section">
+          <div class="ui-form__section">
+            <div class="next-input-wrapper"><label class="next-label" for="shop_company_name">Legal name of business</label><input class="next-input" size="30" type="text" value="Patagonia Brewing Company" name="shop[company_name]" id="shop_company_name" /></div>
+            <div class="next-input-wrapper"><label class="next-label" for="shop_phone">Phone</label><input class="next-input" size="30" type="tel" value="+16268448140" name="shop[phone]" id="shop_phone" /></div>
+            <div class="next-input-wrapper"><label class="next-label" for="shop_address1">Street</label><input class="next-input" size="30" type="text" value="Virrey Cevallos 648" name="shop[address1]" id="shop_address1" /></div>
+            <div class="next-input-wrapper"><label class="next-label" for="shop_address2">Apt, suite, etc. (optional)</label><input class="next-input" size="30" type="text" value="" name="shop[address2]" id="shop_address2" /></div>
+
+             <div class="ui-form__group">
+               <div class="next-input-wrapper"><label class="next-label" for="shop_city">City</label><input class="next-input" size="30" type="text" value="Buenos Aires" name="shop[city]" id="shop_city" /></div>
+               <div class="next-input-wrapper"><label class="next-label" for="shop_zip">Postal / ZIP code</label><input class="next-input" size="30" type="text" value="C1077AAN CABA" name="shop[zip]" id="shop_zip" /></div>
+</div>
+             <div class="ui-form__group" define="{address: new Shopify.AddressOperations(this, &quot;Buenos Aires&quot;)}">
+               <div class="next-input-wrapper"><label class="next-label" for="shop_country">Country</label><div class="next-select__wrapper"><select class="next-select js-country-select" name="shop[country]" id="shop_country"><option value="CA">Canada</option>
+<option value="US">United States</option>
+<option value="GB">United Kingdom</option>
+<option value="AF">Afghanistan</option>
+<option value="AL">Albania</option>
+<option value="DZ">Algeria</option>
+<option value="AD">Andorra</option>
+<option value="AO">Angola</option>
+<option selected="selected" value="AR">Argentina</option>
+<option value="AM">Armenia</option>
+<option value="AW">Aruba</option>
+<option value="AG">Antigua And Barbuda</option>
+<option value="AU">Australia</option>
+<option value="AT">Austria</option>
+<option value="AZ">Azerbaijan</option>
+<option value="BD">Bangladesh</option>
+<option value="BS">Bahamas</option>
+<option value="BH">Bahrain</option>
+<option value="BB">Barbados</option>
+<option value="BY">Belarus</option>
+<option value="BE">Belgium</option>
+<option value="BZ">Belize</option>
+<option value="BJ">Benin</option>
+<option value="BM">Bermuda</option>
+<option value="BT">Bhutan</option>
+<option value="BO">Bolivia</option>
+<option value="BA">Bosnia And Herzegovina</option>
+<option value="BW">Botswana</option>
+<option value="BR">Brazil</option>
+<option value="BN">Brunei</option>
+<option value="BG">Bulgaria</option>
+<option value="NC">New Caledonia</option>
+<option value="KH">Cambodia</option>
+<option value="CM">Republic of Cameroon</option>
+<option value="KY">Cayman Islands</option>
+<option value="CL">Chile</option>
+<option value="CN">China</option>
+<option value="CO">Colombia</option>
+<option value="KM">Comoros</option>
+<option value="CG">Congo</option>
+<option value="CD">Congo, The Democratic Republic Of The</option>
+<option value="CR">Costa Rica</option>
+<option value="CI">Côte d&#39;Ivoire</option>
+<option value="HR">Croatia</option>
+<option value="CW">Curaçao</option>
+<option value="CY">Cyprus</option>
+<option value="CZ">Czech Republic</option>
+<option value="DK">Denmark</option>
+<option value="DM">Dominica</option>
+<option value="DO">Dominican Republic</option>
+<option value="EC">Ecuador</option>
+<option value="EG">Egypt</option>
+<option value="SV">El Salvador</option>
+<option value="EE">Estonia</option>
+<option value="ET">Ethiopia</option>
+<option value="FO">Faroe Islands</option>
+<option value="FJ">Fiji</option>
+<option value="FI">Finland</option>
+<option value="FR">France</option>
+<option value="PF">French Polynesia</option>
+<option value="GM">Gambia</option>
+<option value="GE">Georgia</option>
+<option value="DE">Germany</option>
+<option value="GH">Ghana</option>
+<option value="GI">Gibraltar</option>
+<option value="GR">Greece</option>
+<option value="GL">Greenland</option>
+<option value="GD">Grenada</option>
+<option value="GP">Guadeloupe</option>
+<option value="GT">Guatemala</option>
+<option value="GG">Guernsey</option>
+<option value="GY">Guyana</option>
+<option value="HT">Haiti</option>
+<option value="HN">Honduras</option>
+<option value="HK">Hong Kong</option>
+<option value="HU">Hungary</option>
+<option value="IS">Iceland</option>
+<option value="IN">India</option>
+<option value="ID">Indonesia</option>
+<option value="IE">Ireland</option>
+<option value="IM">Isle Of Man</option>
+<option value="IL">Israel</option>
+<option value="IT">Italy</option>
+<option value="JM">Jamaica</option>
+<option value="JP">Japan</option>
+<option value="JE">Jersey</option>
+<option value="JO">Jordan</option>
+<option value="KZ">Kazakhstan</option>
+<option value="KE">Kenya</option>
+<option value="KV">Kosovo</option>
+<option value="KW">Kuwait</option>
+<option value="KG">Kyrgyzstan</option>
+<option value="LV">Latvia</option>
+<option value="LB">Lebanon</option>
+<option value="LS">Lesotho</option>
+<option value="LR">Liberia</option>
+<option value="LI">Liechtenstein</option>
+<option value="LT">Lithuania</option>
+<option value="LU">Luxembourg</option>
+<option value="MO">Macao</option>
+<option value="MK">Macedonia, Republic Of</option>
+<option value="MG">Madagascar</option>
+<option value="MW">Malawi</option>
+<option value="MY">Malaysia</option>
+<option value="MV">Maldives</option>
+<option value="MT">Malta</option>
+<option value="MQ">Martinique</option>
+<option value="MU">Mauritius</option>
+<option value="MX">Mexico</option>
+<option value="MD">Moldova, Republic of</option>
+<option value="MC">Monaco</option>
+<option value="MN">Mongolia</option>
+<option value="ME">Montenegro</option>
+<option value="MA">Morocco</option>
+<option value="MZ">Mozambique</option>
+<option value="MM">Myanmar</option>
+<option value="NA">Namibia</option>
+<option value="NP">Nepal</option>
+<option value="AN">Netherlands Antilles</option>
+<option value="NL">Netherlands</option>
+<option value="NZ">New Zealand</option>
+<option value="NI">Nicaragua</option>
+<option value="NE">Niger</option>
+<option value="NG">Nigeria</option>
+<option value="NO">Norway</option>
+<option value="OM">Oman</option>
+<option value="PK">Pakistan</option>
+<option value="PS">Palestinian Territory, Occupied</option>
+<option value="PA">Panama</option>
+<option value="PG">Papua New Guinea</option>
+<option value="PY">Paraguay</option>
+<option value="PE">Peru</option>
+<option value="PH">Philippines</option>
+<option value="PL">Poland</option>
+<option value="PT">Portugal</option>
+<option value="QA">Qatar</option>
+<option value="RE">Reunion</option>
+<option value="RO">Romania</option>
+<option value="RU">Russia</option>
+<option value="RW">Rwanda</option>
+<option value="KN">Saint Kitts And Nevis</option>
+<option value="LC">Saint Lucia</option>
+<option value="MF">Saint Martin</option>
+<option value="ST">Sao Tome And Principe</option>
+<option value="WS">Samoa</option>
+<option value="SA">Saudi Arabia</option>
+<option value="SN">Senegal</option>
+<option value="RS">Serbia</option>
+<option value="SC">Seychelles</option>
+<option value="SG">Singapore</option>
+<option value="SX">Sint Maarten</option>
+<option value="SK">Slovakia</option>
+<option value="SI">Slovenia</option>
+<option value="ZA">South Africa</option>
+<option value="KR">South Korea</option>
+<option value="ES">Spain</option>
+<option value="LK">Sri Lanka</option>
+<option value="VC">St. Vincent</option>
+<option value="SR">Suriname</option>
+<option value="SE">Sweden</option>
+<option value="CH">Switzerland</option>
+<option value="SY">Syria</option>
+<option value="TW">Taiwan</option>
+<option value="TH">Thailand</option>
+<option value="TZ">Tanzania, United Republic Of</option>
+<option value="TT">Trinidad and Tobago</option>
+<option value="TN">Tunisia</option>
+<option value="TR">Turkey</option>
+<option value="TM">Turkmenistan</option>
+<option value="TC">Turks and Caicos Islands</option>
+<option value="UG">Uganda</option>
+<option value="UA">Ukraine</option>
+<option value="AE">United Arab Emirates</option>
+<option value="UY">Uruguay</option>
+<option value="UZ">Uzbekistan</option>
+<option value="VU">Vanuatu</option>
+<option value="VE">Venezuela</option>
+<option value="VN">Vietnam</option>
+<option value="VG">Virgin Islands, British</option>
+<option value="YE">Yemen</option>
+<option value="ZM">Zambia</option>
+<option value="ZW">Zimbabwe</option>
+<option value="AX">Aland Islands</option>
+<option value="AI">Anguilla</option>
+<option value="BV">Bouvet Island</option>
+<option value="IO">British Indian Ocean Territory</option>
+<option value="BF">Burkina Faso</option>
+<option value="BI">Burundi</option>
+<option value="CV">Cape Verde</option>
+<option value="CF">Central African Republic</option>
+<option value="TD">Chad</option>
+<option value="CX">Christmas Island</option>
+<option value="CC">Cocos (Keeling) Islands</option>
+<option value="CK">Cook Islands</option>
+<option value="CU">Cuba</option>
+<option value="DJ">Djibouti</option>
+<option value="GQ">Equatorial Guinea</option>
+<option value="ER">Eritrea</option>
+<option value="FK">Falkland Islands (Malvinas)</option>
+<option value="GF">French Guiana</option>
+<option value="TF">French Southern Territories</option>
+<option value="GA">Gabon</option>
+<option value="GN">Guinea</option>
+<option value="GW">Guinea Bissau</option>
+<option value="HM">Heard Island And Mcdonald Islands</option>
+<option value="VA">Holy See (Vatican City State)</option>
+<option value="IR">Iran, Islamic Republic Of</option>
+<option value="IQ">Iraq</option>
+<option value="KI">Kiribati</option>
+<option value="KP">Korea, Democratic People&#39;s Republic Of</option>
+<option value="LA">Lao People&#39;s Democratic Republic</option>
+<option value="LY">Libyan Arab Jamahiriya</option>
+<option value="ML">Mali</option>
+<option value="MR">Mauritania</option>
+<option value="YT">Mayotte</option>
+<option value="MS">Montserrat</option>
+<option value="NR">Nauru</option>
+<option value="NU">Niue</option>
+<option value="NF">Norfolk Island</option>
+<option value="PN">Pitcairn</option>
+<option value="BL">Saint Barthélemy</option>
+<option value="SH">Saint Helena</option>
+<option value="PM">Saint Pierre And Miquelon</option>
+<option value="SM">San Marino</option>
+<option value="SL">Sierra Leone</option>
+<option value="SB">Solomon Islands</option>
+<option value="SO">Somalia</option>
+<option value="GS">South Georgia And The South Sandwich Islands</option>
+<option value="SD">Sudan</option>
+<option value="SJ">Svalbard And Jan Mayen</option>
+<option value="SZ">Swaziland</option>
+<option value="TJ">Tajikistan</option>
+<option value="TL">Timor Leste</option>
+<option value="TG">Togo</option>
+<option value="TK">Tokelau</option>
+<option value="TO">Tonga</option>
+<option value="TV">Tuvalu</option>
+<option value="UM">United States Minor Outlying Islands</option>
+<option value="WF">Wallis And Futuna</option>
+<option value="EH">Western Sahara</option></select><svg class="next-icon next-icon--size-12"><use xlink:href="#next-chevron-down" /></svg></div></div>
+
+               <div bind-show="address.hasProvinces" class="next-input-wrapper"><label bind="address.regionDescriptor" class="next-label" for="shop_province">Province</label><div class="next-select__wrapper"><select class="next-select js-province-select" name="shop[province]" id="shop_province"><option selected="selected" value="Buenos Aires">Buenos Aires</option>
+<option value="Catamarca">Catamarca</option>
+<option value="Chaco">Chaco</option>
+<option value="Chubut">Chubut</option>
+<option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+<option value="Córdoba">Córdoba</option>
+<option value="Corrientes">Corrientes</option>
+<option value="Ente Ríos">Ente Ríos</option>
+<option value="Formosa">Formosa</option>
+<option value="Jujuy">Jujuy</option>
+<option value="La Pampa">La Pampa</option>
+<option value="La Rioja">La Rioja</option>
+<option value="Mendoza">Mendoza</option>
+<option value="Misiones">Misiones</option>
+<option value="Neuquén">Neuquén</option>
+<option value="Río Negro">Río Negro</option>
+<option value="Salta">Salta</option>
+<option value="San Juan">San Juan</option>
+<option value="San Luis">San Luis</option>
+<option value="Santa Cruz">Santa Cruz</option>
+<option value="Santa Fe">Santa Fe</option>
+<option value="Santiago Del Estero">Santiago Del Estero</option>
+<option value="Tierra Del Fuego">Tierra Del Fuego</option>
+<option value="Tucumán">Tucumán</option></select><svg class="next-icon next-icon--size-12"><use xlink:href="#next-chevron-down" /></svg></div></div>
+</div></div>        </div>
+      </div>
+    </div>
+</div></section>
+
+
+
+  <section class="ui-annotated-section " context="standardsAndFormats"><div class="ui-annotated-section__annotation"><div class="ui-annotated-section__title"><h2 class="next-heading next-heading--no-margin">Standards and formats</h2></div><div class="ui-annotated-section__description"><p>Standards and formats are used to calculate product prices, shipping weights, order times, and more.</p></div></div><div class="ui-annotated-section__content">
+    <div class="next-card">
+      <div class="section-content" define="{showMoneyFormat: false}">
+        <div class="next-card__section">
+          <div class="ui-form__section">
+           <div class="next-input-wrapper"><label class="next-label" for="shop_timezone">Timezone</label><div class="next-select__wrapper"><select class="next-select" name="shop[timezone]" id="shop_timezone"><option value="American Samoa">(GMT-11:00) American Samoa</option>
+<option value="International Date Line West">(GMT-11:00) International Date Line West</option>
+<option value="Midway Island">(GMT-11:00) Midway Island</option>
+<option value="Hawaii">(GMT-10:00) Hawaii</option>
+<option value="Pacific/Honolulu">(GMT-10:00) Pacific/Honolulu</option>
+<option value="Alaska">(GMT-09:00) Alaska</option>
+<option value="America/Los_Angeles">(GMT-08:00) America/Los_Angeles</option>
+<option value="America/Vancouver">(GMT-08:00) America/Vancouver</option>
+<option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+<option value="Tijuana">(GMT-08:00) Tijuana</option>
+<option value="America/Denver">(GMT-07:00) America/Denver</option>
+<option value="America/Edmonton">(GMT-07:00) America/Edmonton</option>
+<option value="America/Phoenix">(GMT-07:00) America/Phoenix</option>
+<option value="Arizona">(GMT-07:00) Arizona</option>
+<option value="Chihuahua">(GMT-07:00) Chihuahua</option>
+<option value="Mazatlan">(GMT-07:00) Mazatlan</option>
+<option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+<option value="America/Chicago">(GMT-06:00) America/Chicago</option>
+<option value="America/Costa_Rica">(GMT-06:00) America/Costa_Rica</option>
+<option value="America/Mexico_City">(GMT-06:00) America/Mexico_City</option>
+<option value="Central America">(GMT-06:00) Central America</option>
+<option value="Central Time (US &amp; Canada)">(GMT-06:00) Central Time (US &amp; Canada)</option>
+<option value="Guadalajara">(GMT-06:00) Guadalajara</option>
+<option value="Mexico City">(GMT-06:00) Mexico City</option>
+<option value="Monterrey">(GMT-06:00) Monterrey</option>
+<option value="Saskatchewan">(GMT-06:00) Saskatchewan</option>
+<option value="America/Indianapolis">(GMT-05:00) America/Indianapolis</option>
+<option value="America/Montreal">(GMT-05:00) America/Montreal</option>
+<option value="America/New_York">(GMT-05:00) America/New_York</option>
+<option value="America/Toronto">(GMT-05:00) America/Toronto</option>
+<option value="Bogota">(GMT-05:00) Bogota</option>
+<option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+<option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+<option value="Lima">(GMT-05:00) Lima</option>
+<option value="Quito">(GMT-05:00) Quito</option>
+<option value="America/La_Paz">(GMT-04:00) America/La_Paz</option>
+<option value="Atlantic Time (Canada)">(GMT-04:00) Atlantic Time (Canada)</option>
+<option value="Caracas">(GMT-04:00) Caracas</option>
+<option value="Georgetown">(GMT-04:00) Georgetown</option>
+<option value="La Paz">(GMT-04:00) La Paz</option>
+<option value="Santiago">(GMT-04:00) Santiago</option>
+<option value="Newfoundland">(GMT-03:30) Newfoundland</option>
+<option value="Brasilia">(GMT-03:00) Brasilia</option>
+<option selected="selected" value="Buenos Aires">(GMT-03:00) Buenos Aires</option>
+<option value="Greenland">(GMT-03:00) Greenland</option>
+<option value="Montevideo">(GMT-03:00) Montevideo</option>
+<option value="Mid-Atlantic">(GMT-02:00) Mid-Atlantic</option>
+<option value="Azores">(GMT-01:00) Azores</option>
+<option value="Cape Verde Is.">(GMT-01:00) Cape Verde Is.</option>
+<option value="Casablanca">(GMT+00:00) Casablanca</option>
+<option value="Dublin">(GMT+00:00) Dublin</option>
+<option value="Edinburgh">(GMT+00:00) Edinburgh</option>
+<option value="Europe/Lisbon">(GMT+00:00) Europe/Lisbon</option>
+<option value="Europe/London">(GMT+00:00) Europe/London</option>
+<option value="Lisbon">(GMT+00:00) Lisbon</option>
+<option value="London">(GMT+00:00) London</option>
+<option value="Monrovia">(GMT+00:00) Monrovia</option>
+<option value="UTC">(GMT+00:00) UTC</option>
+<option value="Amsterdam">(GMT+01:00) Amsterdam</option>
+<option value="Belgrade">(GMT+01:00) Belgrade</option>
+<option value="Berlin">(GMT+01:00) Berlin</option>
+<option value="Bern">(GMT+01:00) Bern</option>
+<option value="Bratislava">(GMT+01:00) Bratislava</option>
+<option value="Brussels">(GMT+01:00) Brussels</option>
+<option value="Budapest">(GMT+01:00) Budapest</option>
+<option value="Copenhagen">(GMT+01:00) Copenhagen</option>
+<option value="Europe/Berlin">(GMT+01:00) Europe/Berlin</option>
+<option value="Europe/Copenhagen">(GMT+01:00) Europe/Copenhagen</option>
+<option value="Europe/Madrid">(GMT+01:00) Europe/Madrid</option>
+<option value="Europe/Oslo">(GMT+01:00) Europe/Oslo</option>
+<option value="Europe/Paris">(GMT+01:00) Europe/Paris</option>
+<option value="Europe/Rome">(GMT+01:00) Europe/Rome</option>
+<option value="Ljubljana">(GMT+01:00) Ljubljana</option>
+<option value="Madrid">(GMT+01:00) Madrid</option>
+<option value="Paris">(GMT+01:00) Paris</option>
+<option value="Prague">(GMT+01:00) Prague</option>
+<option value="Rome">(GMT+01:00) Rome</option>
+<option value="Sarajevo">(GMT+01:00) Sarajevo</option>
+<option value="Skopje">(GMT+01:00) Skopje</option>
+<option value="Stockholm">(GMT+01:00) Stockholm</option>
+<option value="Vienna">(GMT+01:00) Vienna</option>
+<option value="Warsaw">(GMT+01:00) Warsaw</option>
+<option value="West Central Africa">(GMT+01:00) West Central Africa</option>
+<option value="Zagreb">(GMT+01:00) Zagreb</option>
+<option value="Athens">(GMT+02:00) Athens</option>
+<option value="Bucharest">(GMT+02:00) Bucharest</option>
+<option value="Cairo">(GMT+02:00) Cairo</option>
+<option value="Harare">(GMT+02:00) Harare</option>
+<option value="Helsinki">(GMT+02:00) Helsinki</option>
+<option value="Istanbul">(GMT+02:00) Istanbul</option>
+<option value="Jerusalem">(GMT+02:00) Jerusalem</option>
+<option value="Kaliningrad">(GMT+02:00) Kaliningrad</option>
+<option value="Kyiv">(GMT+02:00) Kyiv</option>
+<option value="Pretoria">(GMT+02:00) Pretoria</option>
+<option value="Riga">(GMT+02:00) Riga</option>
+<option value="Sofia">(GMT+02:00) Sofia</option>
+<option value="Tallinn">(GMT+02:00) Tallinn</option>
+<option value="Vilnius">(GMT+02:00) Vilnius</option>
+<option value="Baghdad">(GMT+03:00) Baghdad</option>
+<option value="Kuwait">(GMT+03:00) Kuwait</option>
+<option value="Minsk">(GMT+03:00) Minsk</option>
+<option value="Moscow">(GMT+03:00) Moscow</option>
+<option value="Nairobi">(GMT+03:00) Nairobi</option>
+<option value="Riyadh">(GMT+03:00) Riyadh</option>
+<option value="St. Petersburg">(GMT+03:00) St. Petersburg</option>
+<option value="Volgograd">(GMT+03:00) Volgograd</option>
+<option value="Tehran">(GMT+03:30) Tehran</option>
+<option value="Abu Dhabi">(GMT+04:00) Abu Dhabi</option>
+<option value="Baku">(GMT+04:00) Baku</option>
+<option value="Muscat">(GMT+04:00) Muscat</option>
+<option value="Samara">(GMT+04:00) Samara</option>
+<option value="Tbilisi">(GMT+04:00) Tbilisi</option>
+<option value="Yerevan">(GMT+04:00) Yerevan</option>
+<option value="Kabul">(GMT+04:30) Kabul</option>
+<option value="Ekaterinburg">(GMT+05:00) Ekaterinburg</option>
+<option value="Islamabad">(GMT+05:00) Islamabad</option>
+<option value="Karachi">(GMT+05:00) Karachi</option>
+<option value="Tashkent">(GMT+05:00) Tashkent</option>
+<option value="Asia/Calcutta">(GMT+05:30) Asia/Calcutta</option>
+<option value="Chennai">(GMT+05:30) Chennai</option>
+<option value="Kolkata">(GMT+05:30) Kolkata</option>
+<option value="Mumbai">(GMT+05:30) Mumbai</option>
+<option value="New Delhi">(GMT+05:30) New Delhi</option>
+<option value="Sri Jayawardenepura">(GMT+05:30) Sri Jayawardenepura</option>
+<option value="Kathmandu">(GMT+05:45) Kathmandu</option>
+<option value="Almaty">(GMT+06:00) Almaty</option>
+<option value="Astana">(GMT+06:00) Astana</option>
+<option value="Dhaka">(GMT+06:00) Dhaka</option>
+<option value="Urumqi">(GMT+06:00) Urumqi</option>
+<option value="Rangoon">(GMT+06:30) Rangoon</option>
+<option value="Asia/Jakarta">(GMT+07:00) Asia/Jakarta</option>
+<option value="Asia/Phnom_Penh">(GMT+07:00) Asia/Phnom_Penh</option>
+<option value="Bangkok">(GMT+07:00) Bangkok</option>
+<option value="Hanoi">(GMT+07:00) Hanoi</option>
+<option value="Jakarta">(GMT+07:00) Jakarta</option>
+<option value="Krasnoyarsk">(GMT+07:00) Krasnoyarsk</option>
+<option value="Novosibirsk">(GMT+07:00) Novosibirsk</option>
+<option value="Asia/Hong_Kong">(GMT+08:00) Asia/Hong_Kong</option>
+<option value="Asia/Manila">(GMT+08:00) Asia/Manila</option>
+<option value="Beijing">(GMT+08:00) Beijing</option>
+<option value="Chongqing">(GMT+08:00) Chongqing</option>
+<option value="Hong Kong">(GMT+08:00) Hong Kong</option>
+<option value="Irkutsk">(GMT+08:00) Irkutsk</option>
+<option value="Kuala Lumpur">(GMT+08:00) Kuala Lumpur</option>
+<option value="Perth">(GMT+08:00) Perth</option>
+<option value="Singapore">(GMT+08:00) Singapore</option>
+<option value="Taipei">(GMT+08:00) Taipei</option>
+<option value="Ulaanbaatar">(GMT+08:00) Ulaanbaatar</option>
+<option value="Osaka">(GMT+09:00) Osaka</option>
+<option value="Sapporo">(GMT+09:00) Sapporo</option>
+<option value="Seoul">(GMT+09:00) Seoul</option>
+<option value="Tokyo">(GMT+09:00) Tokyo</option>
+<option value="Yakutsk">(GMT+09:00) Yakutsk</option>
+<option value="Adelaide">(GMT+09:30) Adelaide</option>
+<option value="Darwin">(GMT+09:30) Darwin</option>
+<option value="Australia/NSW">(GMT+10:00) Australia/NSW</option>
+<option value="Australia/Queensland">(GMT+10:00) Australia/Queensland</option>
+<option value="Australia/Victoria">(GMT+10:00) Australia/Victoria</option>
+<option value="Brisbane">(GMT+10:00) Brisbane</option>
+<option value="Canberra">(GMT+10:00) Canberra</option>
+<option value="Guam">(GMT+10:00) Guam</option>
+<option value="Hobart">(GMT+10:00) Hobart</option>
+<option value="Melbourne">(GMT+10:00) Melbourne</option>
+<option value="Port Moresby">(GMT+10:00) Port Moresby</option>
+<option value="Sydney">(GMT+10:00) Sydney</option>
+<option value="Vladivostok">(GMT+10:00) Vladivostok</option>
+<option value="Magadan">(GMT+11:00) Magadan</option>
+<option value="New Caledonia">(GMT+11:00) New Caledonia</option>
+<option value="Solomon Is.">(GMT+11:00) Solomon Is.</option>
+<option value="Srednekolymsk">(GMT+11:00) Srednekolymsk</option>
+<option value="Auckland">(GMT+12:00) Auckland</option>
+<option value="Fiji">(GMT+12:00) Fiji</option>
+<option value="Kamchatka">(GMT+12:00) Kamchatka</option>
+<option value="Marshall Is.">(GMT+12:00) Marshall Is.</option>
+<option value="Pacific/Auckland">(GMT+12:00) Pacific/Auckland</option>
+<option value="Wellington">(GMT+12:00) Wellington</option>
+<option value="Chatham Is.">(GMT+12:45) Chatham Is.</option>
+<option value="Nuku&#39;alofa">(GMT+13:00) Nuku&#39;alofa</option>
+<option value="Samoa">(GMT+13:00) Samoa</option>
+<option value="Tokelau Is.">(GMT+13:00) Tokelau Is.</option></select><svg class="next-icon next-icon--size-12"><use xlink:href="#next-chevron-down" /></svg></div></div>
+           <div class="ui-form__group">
+             <div class="next-input-wrapper"><label class="next-label" for="shop_unit_system">Unit system</label><div class="next-select__wrapper"><select bind-event-change="unitSystemChanged(this)" class="next-select" name="shop[unit_system]" id="shop_unit_system"><option value="imperial">Imperial System</option>
+<option selected="selected" value="metric">Metric System</option></select><svg class="next-icon next-icon--size-12"><use xlink:href="#next-chevron-down" /></svg></div></div>
+
+             <div define="new Shopify.UnitSystemOperations(&#39;#shop_weight_unit&#39;)" class="next-input-wrapper"><label class="next-label" for="shop_weight_unit">Default weight unit</label><div class="next-select__wrapper"><select class="next-select" name="shop[weight_unit]" id="shop_weight_unit"><option selected="selected" value="kg">Kilogram (kg)</option>
+<option value="g">Gram (g)</option></select><svg class="next-icon next-icon--size-12"><use xlink:href="#next-chevron-down" /></svg></div></div>
+</div>
+             <div class="next-input-wrapper"><div class="ui-form__label-wrapper"><label class="next-label" for="shop_currency">Currency</label><button name="button" type="button" class="btn btn--link" bind-event-click="showMoneyFormat = !showMoneyFormat">Change formatting</button></div><div class="next-select__wrapper"><select class="next-select" name="shop[currency]" id="shop_currency"><option value="USD">United States Dollars (USD)</option>
+<option value="EUR">Euro (EUR)</option>
+<option value="GBP">United Kingdom Pounds (GBP)</option>
+<option value="CAD">Canadian Dollars (CAD)</option>
+<option value="AFN">Afghan Afghani (AFN)</option>
+<option value="ALL">Albanian Lek (ALL)</option>
+<option value="DZD">Algerian Dinar (DZD)</option>
+<option value="AOA">Angolan Kwanza (AOA)</option>
+<option selected="selected" value="ARS">Argentine Pesos (ARS)</option>
+<option value="AMD">Armenian Dram (AMD)</option>
+<option value="AWG">Aruban Florin (AWG)</option>
+<option value="AUD">Australian Dollars (AUD)</option>
+<option value="BBD">Barbadian Dollar (BBD)</option>
+<option value="AZN">Azerbaijani Manat (AZN)</option>
+<option value="BDT">Bangladesh Taka (BDT)</option>
+<option value="BSD">Bahamian Dollar (BSD)</option>
+<option value="BHD">Bahraini Dinar (BHD)</option>
+<option value="BYR">Belarusian Ruble (BYR)</option>
+<option value="BZD">Belize Dollar (BZD)</option>
+<option value="BTN">Bhutanese Ngultrum (BTN)</option>
+<option value="BAM">Bosnia and Herzegovina Convertible Mark (BAM)</option>
+<option value="BRL">Brazilian Real (BRL)</option>
+<option value="BOB">Bolivian Boliviano (BOB)</option>
+<option value="BWP">Botswana Pula (BWP)</option>
+<option value="BND">Brunei Dollar (BND)</option>
+<option value="BGN">Bulgarian Lev (BGN)</option>
+<option value="MMK">Burmese Kyat (MMK)</option>
+<option value="KHR">Cambodian Riel</option>
+<option value="KYD">Cayman Dollars (KYD)</option>
+<option value="XAF">Central African CFA Franc (XAF)</option>
+<option value="CLP">Chilean Peso (CLP)</option>
+<option value="CNY">Chinese Yuan Renminbi (CNY)</option>
+<option value="COP">Colombian Peso (COP)</option>
+<option value="KMF">Comorian Franc (KMF)</option>
+<option value="CDF">Congolese franc (CDF)</option>
+<option value="CRC">Costa Rican Colones (CRC)</option>
+<option value="HRK">Croatian Kuna (HRK)</option>
+<option value="CZK">Czech Koruny (CZK)</option>
+<option value="DKK">Danish Kroner (DKK)</option>
+<option value="DOP">Dominican Peso (DOP)</option>
+<option value="XCD">East Caribbean Dollar (XCD)</option>
+<option value="EGP">Egyptian Pound (EGP)</option>
+<option value="ETB">Ethiopian Birr (ETB)</option>
+<option value="XPF">CFP Franc (XPF)</option>
+<option value="FJD">Fijian Dollars (FJD)</option>
+<option value="GMD">Gambian Dalasi (GMD)</option>
+<option value="GHS">Ghanaian Cedi (GHS)</option>
+<option value="GTQ">Guatemalan Quetzal (GTQ)</option>
+<option value="GYD">Guyanese Dollar (GYD)</option>
+<option value="GEL">Georgian Lari (GEL)</option>
+<option value="HTG">Haitian Gourde (HTG)</option>
+<option value="HNL">Honduran Lempira (HNL)</option>
+<option value="HKD">Hong Kong Dollars (HKD)</option>
+<option value="HUF">Hungarian Forint (HUF)</option>
+<option value="ISK">Icelandic Kronur (ISK)</option>
+<option value="INR">Indian Rupees (INR)</option>
+<option value="IDR">Indonesian Rupiah (IDR)</option>
+<option value="ILS">Israeli New Shekel (NIS)</option>
+<option value="JMD">Jamaican Dollars (JMD)</option>
+<option value="JPY">Japanese Yen (JPY)</option>
+<option value="JEP">Jersey Pound</option>
+<option value="JOD">Jordanian Dinar (JOD)</option>
+<option value="KZT">Kazakhstani Tenge (KZT)</option>
+<option value="KES">Kenyan Shilling (KES)</option>
+<option value="KWD">Kuwaiti Dinar (KWD)</option>
+<option value="KGS">Kyrgyzstani Som (KGS)</option>
+<option value="LVL">Latvian Lati (LVL)</option>
+<option value="LBP">Lebanese Pounds (LBP)</option>
+<option value="LSL">Lesotho Loti (LSL)</option>
+<option value="LRD">Liberian Dollar (LRD)</option>
+<option value="LTL">Lithuanian Litai (LTL)</option>
+<option value="MGA">Malagasy Ariary (MGA)</option>
+<option value="MKD">Macedonia Denar (MKD)</option>
+<option value="MOP">Macanese Pataca (MOP)</option>
+<option value="MWK">Malawian Kwacha (MWK)</option>
+<option value="MVR">Maldivian Rufiyaa (MVR)</option>
+<option value="MXN">Mexican Pesos (MXN)</option>
+<option value="MYR">Malaysian Ringgits (MYR)</option>
+<option value="MUR">Mauritian Rupee (MUR)</option>
+<option value="MDL">Moldovan Leu (MDL)</option>
+<option value="MAD">Moroccan Dirham</option>
+<option value="MNT">Mongolian Tugrik</option>
+<option value="MZN">Mozambican Metical</option>
+<option value="NAD">Namibian Dollar</option>
+<option value="NPR">Nepalese Rupee (NPR)</option>
+<option value="ANG">Netherlands Antillean Guilder</option>
+<option value="NZD">New Zealand Dollars (NZD)</option>
+<option value="NIO">Nicaraguan Córdoba (NIO)</option>
+<option value="NGN">Nigerian Naira (NGN)</option>
+<option value="NOK">Norwegian Kroner (NOK)</option>
+<option value="OMR">Omani Rial (OMR)</option>
+<option value="PKR">Pakistani Rupee (PKR)</option>
+<option value="PGK">Papua New Guinean Kina (PGK)</option>
+<option value="PYG">Paraguayan Guarani (PYG)</option>
+<option value="PEN">Peruvian Nuevo Sol (PEN)</option>
+<option value="PHP">Philippine Peso (PHP)</option>
+<option value="PLN">Polish Zlotych (PLN)</option>
+<option value="QAR">Qatari Rial (QAR)</option>
+<option value="RON">Romanian Lei (RON)</option>
+<option value="RUB">Russian Rubles (RUB)</option>
+<option value="RWF">Rwandan Franc (RWF)</option>
+<option value="WST">Samoan Tala (WST)</option>
+<option value="SAR">Saudi Riyal (SAR)</option>
+<option value="STD">Sao Tome And Principe Dobra (STD)</option>
+<option value="RSD">Serbian dinar (RSD)</option>
+<option value="SCR">Seychellois Rupee (SCR)</option>
+<option value="SGD">Singapore Dollars (SGD)</option>
+<option value="SYP">Syrian Pound (SYP)</option>
+<option value="ZAR">South African Rand (ZAR)</option>
+<option value="KRW">South Korean Won (KRW)</option>
+<option value="LKR">Sri Lankan Rupees (LKR)</option>
+<option value="SRD">Surinamese Dollar (SRD)</option>
+<option value="SEK">Swedish Kronor (SEK)</option>
+<option value="CHF">Swiss Francs (CHF)</option>
+<option value="TWD">Taiwan Dollars (TWD)</option>
+<option value="THB">Thai baht (THB)</option>
+<option value="TZS">Tanzanian Shilling (TZS)</option>
+<option value="TTD">Trinidad and Tobago Dollars (TTD)</option>
+<option value="TND">Tunisian Dinar (TND)</option>
+<option value="TRY">Turkish Lira (TRY)</option>
+<option value="TMT">Turkmenistani Manat (TMT)</option>
+<option value="UGX">Ugandan Shilling (UGX)</option>
+<option value="UAH">Ukrainian Hryvnia (UAH)</option>
+<option value="AED">United Arab Emirates Dirham (AED)</option>
+<option value="UYU">Uruguayan Pesos (UYU)</option>
+<option value="UZS">Uzbekistan som (UZS)</option>
+<option value="VUV">Vanuatu Vatu (VUV)</option>
+<option value="VEF">Venezuelan Bolivares (VEF)</option>
+<option value="VND">Vietnamese đồng (VND)</option>
+<option value="XOF">West African CFA franc (XOF)</option>
+<option value="YER">Yemeni Rial (YER)</option>
+<option value="ZMW">Zambian Kwacha (ZMW)</option></select><svg class="next-icon next-icon--size-12"><use xlink:href="#next-chevron-down" /></svg></div></div>
+</div>        </div>
+        <div class="next-card__section" bind-show="showMoneyFormat">
+          <h2 class="next-heading next-heading--small next-heading--half-margin">Currency Formatting</h2>
+          <p class="type--subdued">
+            Change how currencies are displayed on your store. {{amount}} and {{amount_no_decimals}} will be replaced with the price of your product.
+          </p>
+          <div class="ui-form__section">
+            <div class="next-input-wrapper"><label class="next-label" for="shop_money_with_currency_format">HTML with currency</label><input value="${{amount_with_comma_separator}} ARS" placeholder="${{amount}} USD" class="next-input" size="30" type="text" name="shop[money_with_currency_format]" id="shop_money_with_currency_format" /></div>
+
+            <div class="next-input-wrapper"><label class="next-label" for="shop_money_format">HTML without currency</label><input value="${{amount_with_comma_separator}}" placeholder="${{amount}}" class="next-input" size="30" type="text" name="shop[money_format]" id="shop_money_format" /></div>
+
+            <div class="next-input-wrapper"><label class="next-label" for="shop_money_with_currency_in_emails_format">Email with currency</label><input value="${{amount_with_comma_separator}} ARS" placeholder="${{amount}} USD" class="next-input" size="30" type="text" name="shop[money_with_currency_in_emails_format]" id="shop_money_with_currency_in_emails_format" /></div>
+
+            <div class="next-input-wrapper"><label class="next-label" for="shop_money_in_emails_format">Email without currency</label><input value="${{amount_with_comma_separator}}" placeholder="${{amount}}" class="next-input" size="30" type="text" name="shop[money_in_emails_format]" id="shop_money_in_emails_format" /></div>
+</div>        </div>
+        <div class="next-card__section">
+          <div>
+            <h2 class="next-heading next-heading--small next-heading--half-margin">Edit order ID format (optional)</h2>
+            <p class="type--subdued">Order numbers start at #1001 by default. While you can't change the order number itself, you can add a prefix or suffix to create IDs like "EN1001" or "1001-A."</p>
+          </div>
+          <div class="ui-form__section">
+            <div class="ui-form__group" define="{orderNumberFormat: &quot;#{{number}}&quot;}">
+              <div class="next-input-wrapper"><label class="next-label" for="shop_order_number_format_prefix">Prefix</label><input value="#" bind="orderPrefixFormat" bind-event-input="orderNumberFormat = orderPrefixFormat + &quot;{{ number }}&quot; + orderSuffixFormat" class="next-input" size="30" type="text" name="shop[order_number_format_prefix]" id="shop_order_number_format_prefix" /></div>
+
+              <div class="next-input-wrapper"><label class="next-label" for="shop_order_number_format_suffix">Suffix</label><input value="" bind="orderSuffixFormat" bind-event-input="orderNumberFormat = orderPrefixFormat + &quot;{{ number }}&quot; + orderSuffixFormat" class="next-input" size="30" type="text" name="shop[order_number_format_suffix]" id="shop_order_number_format_suffix" /></div>
+</div><div class="ui-form__element ui-form__section--help-text"><p class="next-input__help-text">Your order ID will appear as <em><span bind="$root.orderNumberExamples(orderNumberFormat)"></span></em></p></div></div>        </div>
+      </div>
+    </div>
+</div></section>
+
+    <div class="ui-page-actions">
+      <div class="ui-page-actions__primary"><div class="button-group button-group--right-aligned">
+        <input type="submit" name="commit" value="Save" class="btn btn-primary js-btn-primary js-btn-loadable" />
+</div></div></div></form></div>
+
+      </main>
+    </div>
+  </div>
+  <div class="modal"
+    data-tg-refresh="modal"
+    id="modal_container"></div>
+  <div class="modal-bg"
+    data-tg-refresh="modal"
+    id="modal_backdrop"></div>
+  <div class="aviary-modal-bg"><div class="aviary-modal"></div></div>
+
+  <script src="//stats.g.doubleclick.net/dc.js" async="async" data-turbolinks-eval="false"></script>
+<script type="text/javascript">var _gaq = _gaq || [];_gaq.push(["_setAccount","UA-82702-18"]);_gaq.push(["_addDevId","o5cUG"]);_gaq.push(["_setAllowLinker",true]);_gaq.push(["_setDomainName",".myshopify.com"]);_gaq.push(["_setAllowHash",false]);_gaq.push(["_setCustomVar",2,"PlanName","shopify_plus",2]);_gaq.push(["_trackPageview","\/admin\/general\/show"]);</script>
+<script type="text/javascript">
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    var _gaUTrackerOptions = {cookieDomain: '.myshopify.com', legacyCookieDomain: '.myshopify.com', 'allowLinker': true};ga('create', 'UA-82702-49', 'auto', _gaUTrackerOptions);ga('set', 'dimension3', '11035152');ga('send', 'pageview', {'page': '/admin/general/show'});
+      (function(){
+        ga('require', 'linker');
+        function addListener(element, type, callback) {
+          if (element.addEventListener) {
+            element.addEventListener(type, callback);
+          }
+          else if (element.attachEvent) {
+            element.attachEvent('on' + type, callback);
+          }
+        }
+        function decorate(event) {
+          event = event || window.event;
+          var target = event.target || event.srcElement;
+          if (target && (target.action || target.href)) {
+            ga(function (tracker) {
+              var linkerParam = tracker.get('linkerParam');
+              document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
+            });
+          }
+        }
+        addListener(window, 'load', function(){
+          for (var i=0; i<document.forms.length; i++) {
+            if(document.forms[i].action && document.forms[i].action.indexOf('/cart') >= 0) {
+              addListener(document.forms[i], 'submit', decorate);
+            }
+          }
+          for (var i=0; i<document.links.length; i++) {
+            if(document.links[i].href && document.links[i].href.indexOf('/checkout') >= 0) {
+              addListener(document.links[i], 'click', decorate);
+            }
+          }
+        })
+      }());
+    </script>
+
+<script type="text/javascript">
+  (function(){
+    var analytics = window.analytics = window.analytics || [];
+    var config = {"Trekkie":{"appName":"admin","defaultAttributes":{"shopId":11035152,"userId":59566467}},"LastShop":{}};
+
+    if (analytics.initialize) {
+      return;
+    }
+
+    analytics.methods = [
+      'trackSubmit',
+      'trackClick',
+      'trackLink',
+      'trackForm',
+      'pageview',
+      'identify',
+      'initialize',
+      'group',
+      'track',
+      'ready',
+      'alias',
+      'page',
+      'once',
+      'off',
+      'on'
+    ];
+
+    analytics.factory = function(method){
+      return function(){
+        var args = Array.prototype.slice.call(arguments);
+        args.unshift(method);
+        analytics.push(args);
+        return analytics;
+      };
+    };
+
+    for (var i = 0; i < analytics.methods.length; i++) {
+      var key = analytics.methods[i];
+      analytics[key] = analytics.factory(key);
+    }
+
+    analytics.load = function(config){
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+      script.async = true;
+      script.src = '//cdn.shopify.com/s/javascripts/trekkie.' + config.Trekkie.appName + '.min.js';
+      var first = document.getElementsByTagName('script')[0];
+      first.parentNode.insertBefore(script, first);
+
+      analytics.initialize(config);
+    };
+
+    analytics.SNIPPET_VERSION = '3.0.1';
+    analytics.load(config);
+    analytics.page();
+  })();
+</script>
+
+
+  <script src="//s3.amazonaws.com/ki.js/46764/a7Q.js" async="async" data-turbolinks-eval="false"></script>
+  <script data-turbolinks-eval="false" refresh-never>
+    var _kiq = _kiq || [];
+    _kiq.push(['identify', "11035152"]);
+    _kiq.push(['options', { thanks: { close: [5*1000, 15*1000] }}]);
+    _kiq.push(['set', {
+      'google_domains': "no",
+      'email': "thomas.reggi@ab-inbev.com"
+    }]);
+  </script>
+
+  <iframe sandbox="allow-scripts" frameborder="0" scrolling="no" width="1" height="1" style="visibility:hidden; display:none;" src="https://bevybar.myshopify.com/services/tracking/lead_post_admin"></iframe>
+<iframe sandbox="allow-scripts" frameborder="0" scrolling="no" width="1" height="1" style="visibility:hidden; display:none;" src="https://bevybar.myshopify.com/services/tracking/prospect"></iframe>
+<iframe sandbox="allow-scripts" frameborder="0" scrolling="no" width="1" height="1" style="visibility:hidden; display:none;" src="https://bevybar.myshopify.com/services/tracking/customer"></iframe>
+<iframe sandbox="allow-scripts" frameborder="0" scrolling="no" width="1" height="1" style="visibility:hidden; display:none;" src="https://bevybar.myshopify.com/services/tracking/admin?source=%2Fadmin%2Fsettings%2Fgeneral"></iframe>
+  <script>
+  (function () {
+    var googleAnalyticsEvents = [];
+
+    for (var i = 0; i < googleAnalyticsEvents.length; i++) {
+      var gaEvent = googleAnalyticsEvents[i];
+
+      ga('send', 'event', {
+        eventCategory:  gaEvent.category,
+        eventAction:    gaEvent.action,
+        eventLabel:     gaEvent.label
+      });
+    }
+  })();
+</script>
+
+
+  <script data-define="{bossMode: new Shopify.Modal(this, {&quot;size&quot;:&quot;real-fullscreen&quot;})}" type="text/html" class="modal_source">
+    <div class="body" style="min-height: 1000px">
+      <img src="//cdn.shopify.com/s/assets/unicorns-d4f5d76d79feffe00ea847fa71700b634f36ee062dddf458bd21a01f2c81551b.png" alt="Unicorns" />
+    </div>
+</script>
+  <img class="hide" src="//cdn.shopify.com/s/assets/admin/shopify-notification-icon-5bb71743b535cc0810f4fa447c50934f8b99a46d030d55b8467c3831c14f5c36.png" alt="Shopify notification icon" />
+  <div id="UIModalContainer"><div id="UIModalBackdrop" data-tg-refresh="ui-modal-backdrop" class="ui-modal-backdrop"></div><div id="UIModalContents" class="ui-modal-contents" data-tg-refresh="ui-modal-contents"></div></div>
+  <div id="global-icon-symbols" data-tg-refresh="global-icon-symbols" data-tg-refresh-always="true" style="display: none;"><svg xmlns="http://www.w3.org/2000/svg"><symbol id="next-settings"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24"><path d="M23.6 10.1l-2.7-.5c-.2 0-.3-.2-.4-.3-.2-.5-.3-1-.6-1.4-.1-.2-.1-.4 0-.5l1.5-2.3c.1-.2.1-.5-.1-.6l-1.9-1.9c-.2-.2-.4-.2-.6-.1L16.6 4c-.2.1-.3.1-.5 0-.4-.2-.9-.4-1.4-.6-.2-.1-.3-.2-.3-.4L13.9.3c0-.2-.3-.4-.5-.4h-2.7c-.2 0-.4.2-.5.4l-.6 2.8c0 .2-.2.3-.3.4-.5.1-1 .3-1.4.5-.2.1-.4.1-.5 0L5.1 2.5c-.2-.1-.5-.1-.6.1L2.6 4.5c-.2.1-.2.4-.1.6L4 7.4c.1.2.1.3 0 .5-.2.4-.4.9-.6 1.4 0 .1-.2.3-.3.3l-2.7.5c-.2 0-.4.3-.4.5v2.7c0 .2.2.4.4.5l2.7.5c.2 0 .3.2.4.3.2.5.3 1 .6 1.4.1.2.1.4 0 .5l-1.5 2.3c-.1.2-.1.5.1.6l1.9 1.9c.2.2.4.2.6.1L7.4 20c.2-.1.3-.1.5 0 .4.2.9.4 1.4.6.2.1.3.2.3.4l.5 2.7c0 .2.3.4.5.4h2.7c.2 0 .4-.2.5-.4l.5-2.7c0-.2.2-.3.3-.4.5-.2 1-.3 1.4-.6.2-.1.4-.1.5 0l2.3 1.5c.2.1.5.1.6-.1l1.9-1.9c.2-.2.2-.4.1-.6L20 16.6c-.1-.2-.1-.3 0-.5.2-.4.4-.9.6-1.4.1-.2.2-.3.4-.3l2.7-.5c.2 0 .4-.3.4-.5v-2.7c-.1-.3-.3-.5-.5-.6zM16 12c0 2.2-1.8 4-4 4s-4-1.8-4-4 1.8-4 4-4 4 1.8 4 4z"/></svg></symbol><symbol id="next-chevron-down"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24"><path d="M21 5.176l-9.086 9.353-8.914-9.353-2.314 2.471 11.314 11.735 11.314-11.735-2.314-2.471z"/></svg></symbol><symbol id="next-website"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.4 2c-.2 0-.3.3-.2.4l1.4 1.4-3.8 3.9c-.2.2-.2.6 0 .8l.8.8c.2.2.6.2.8 0l3.8-3.8 1.4 1.4c.2.2.4 0 .4-.2v-4.2c0-.3-.2-.5-.5-.5h-4.1zm.6 0h-6c-1.1 0-2 .9-2 2v8c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-6 2h-2v3c0 .6-.5 1-1 1h-6c-.6 0-1-.5-1-1v-6c0-.6.5-1 1-1h3v-2h2z"/></svg></symbol><symbol id="next-search-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><path d="M0 5.667c0 3.125 2.542 5.667 5.667 5.667 1.202 0 2.315-.38 3.233-1.02l.455.456c-.07.5.082 1.025.466 1.41l3.334 3.332c.326.325.753.488 1.18.488.425 0 .852-.163 1.177-.488.652-.65.652-1.706 0-2.357L12.18 9.822c-.384-.384-.91-.536-1.41-.466l-.454-.456c.64-.918 1.02-2.03 1.02-3.233C11.333 2.542 8.79 0 5.666 0S0 2.542 0 5.667zm2 0C2 3.645 3.645 2 5.667 2s3.667 1.645 3.667 3.667-1.646 3.666-3.667 3.666S2 7.688 2 5.667z"/></svg></symbol><symbol id="loading-circle"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1_copy" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve"><g><circle fill="#202428" cx="15" cy="8" r="1"/><circle fill="#22262A" cx="14.971" cy="8.637" r="1"/><circle fill="#24282D" cx="14.887" cy="9.258" r="1"/><circle fill="#262A2F" cx="14.75" cy="9.86" r="1"/><circle fill="#282D31" cx="14.563" cy="10.441" r="1"/><circle fill="#2A2F34" cx="14.327" cy="10.999" r="1"/><circle fill="#2C3136" cx="14.045" cy="11.531" r="1"/><circle fill="#2E3338" cx="13.721" cy="12.035" r="1"/><circle fill="#2F353B" cx="13.356" cy="12.508" r="1"/><circle fill="#31373D" cx="12.952" cy="12.947" r="1"/><circle fill="#33393F" cx="12.513" cy="13.351" r="1"/><circle fill="#353C42" cx="12.04" cy="13.717" r="1"/><circle fill="#373E44" cx="11.537" cy="14.042" r="1"/><circle fill="#394046" cx="11.005" cy="14.324" r="1"/><circle fill="#3B4249" cx="10.447" cy="14.56" r="1"/><circle fill="#3D444B" cx="9.866" cy="14.748" r="1"/><circle fill="#3F464D" cx="9.264" cy="14.886" r="1"/><circle fill="#414950" cx="8.644" cy="14.971" r="1"/><circle fill="#434B52" cx="8.007" cy="15" r="1"/><circle fill="#454D54" cx="7.37" cy="14.972" r="1"/><circle fill="#474F57" cx="6.749" cy="14.889" r="1"/><circle fill="#495159" cx="6.147" cy="14.752" r="1"/><circle fill="#4B535B" cx="5.565" cy="14.565" r="1"/><circle fill="#4C555E" cx="5.007" cy="14.33" r="1"/><circle fill="#4E5860" cx="4.474" cy="14.049" r="1"/><circle fill="#505A62" cx="3.97" cy="13.725" r="1"/><circle fill="#525C65" cx="3.497" cy="13.36" r="1"/><circle fill="#545E67" cx="3.057" cy="12.957" r="1"/><circle fill="#566069" cx="2.653" cy="12.518" r="1"/><circle fill="#58626C" cx="2.287" cy="12.045" r="1"/><circle fill="#5A646E" cx="1.961" cy="11.542" r="1"/><circle fill="#5C6770" cx="1.679" cy="11.011" r="1"/><circle fill="#5E6972" cx="1.442" cy="10.453" r="1"/><circle fill="#606B75" cx="1.253" cy="9.873" r="1"/><circle fill="#626D77" cx="1.115" cy="9.271" r="1"/><circle fill="#646F79" cx="1.03" cy="8.65" r="1"/><circle fill="#66717C" cx="1" cy="8.014" r="1"/><circle fill="#68737E" cx="1.027" cy="7.377" r="1"/><circle fill="#6A7680" cx="1.11" cy="6.756" r="1"/><circle fill="#6B7883" cx="1.246" cy="6.153" r="1"/><circle fill="#6D7A85" cx="1.433" cy="5.571" r="1"/><circle fill="#6F7C87" cx="1.668" cy="5.013" r="1"/><circle fill="#717E8A" cx="1.948" cy="4.48" r="1"/><circle fill="#73808C" cx="2.272" cy="3.976" r="1"/><circle fill="#75828E" cx="2.636" cy="3.502" r="1"/><circle fill="#778591" cx="3.039" cy="3.062" r="1"/><circle fill="#798793" cx="3.477" cy="2.657" r="1"/><circle fill="#7B8995" cx="3.949" cy="2.29" r="1"/><circle fill="#7D8B98" cx="4.452" cy="1.964" r="1"/><circle fill="#7F8D9A" cx="4.983" cy="1.682" r="1"/><circle fill="#818F9C" cx="5.54" cy="1.444" r="1"/><circle fill="#83929F" cx="6.121" cy="1.255" r="1"/><circle fill="#8594A1" cx="6.723" cy="1.116" r="1"/><circle fill="#8796A3" cx="7.343" cy="1.03" r="1"/><circle fill="#8898A6" cx="7.979" cy="1" r="1"/><circle fill="#8A9AA8" cx="8.609" cy="1.027" r="1"/><circle fill="#8C9CAA" cx="9.226" cy="1.109" r="1"/><circle fill="#8E9EAD" cx="9.827" cy="1.245" r="1"/><circle fill="#90A1AF" cx="10.408" cy="1.429" r="1"/><circle fill="#92A3B1" cx="10.967" cy="1.66" r="1"/><circle fill="#94A5B4" cx="11.498" cy="1.935" r="1"/><circle fill="#96A7B6" cx="12" cy="2.25" r="1"/></g></svg></symbol><symbol id="clear"><svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" width="16" height="16" viewBox="0 0 16 16"><path fill-rule="evenodd" fill="#BFBFBF" d="M12.234 3.766c-2.334-2.334-6.119-2.334-8.453 0s-2.334 6.119 0 8.453 6.119 2.334 8.453 0 2.334-6.119 0-8.453zm-1.06 6.329l-1.056 1.056-2.11-2.112-2.111 2.111-1.056-1.056 2.111-2.111-2.111-2.11 1.056-1.056 2.111 2.111 2.111-2.111 1.056 1.056-2.112 2.111 2.111 2.111z"/></svg></symbol><symbol id="next-remove"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24"><path d="M19.5 22c-.2 0-.5-.1-.7-.3L12 14.9l-6.8 6.8c-.2.2-.4.3-.7.3-.2 0-.5-.1-.7-.3l-1.6-1.6c-.1-.2-.2-.4-.2-.6 0-.2.1-.5.3-.7L9.1 12 2.3 5.2C2.1 5 2 4.8 2 4.5c0-.2.1-.5.3-.7l1.6-1.6c.2-.1.4-.2.6-.2.3 0 .5.1.7.3L12 9.1l6.8-6.8c.2-.2.4-.3.7-.3.2 0 .5.1.7.3l1.6 1.6c.1.2.2.4.2.6 0 .2-.1.5-.3.7L14.9 12l6.8 6.8c.2.2.3.4.3.7 0 .2-.1.5-.3.7l-1.6 1.6c-.2.1-.4.2-.6.2z"/></svg></symbol><symbol id="next-info"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24"><g><path d="M13.5 7h-2c-.8 0-1.5.7-1.5 1.5v14c0 .8.7 1.5 1.5 1.5h2c.8 0 1.5-.7 1.5-1.5v-14c0-.8-.7-1.5-1.5-1.5z"/><circle cx="12.5" cy="2.5" r="2.5"/></g></svg></symbol><symbol id="next-dashboard-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><g><path d="M8.43 3.445c-.248-.21-.612-.21-.86 0L2.353 7.86C2.13 8.05 2 8.33 2 8.624v6.71c0 .366.3.666.667.666h2.667C5.7 16 6 15.7 6 15.333v-3c0-.183.15-.333.333-.333h3.333c.184 0 .334.15.334.333v3c0 .367.3.667.667.667h2.667c.366 0 .666-.3.666-.667v-6.71c0-.294-.13-.573-.354-.763L8.43 3.445zM15.764 6.158L8.944.39C8.692.14 8.357 0 8 0c-.357 0-.692.14-.902.354L.236 6.158c-.28.238-.316.66-.078.94.132.156.32.236.51.236.15 0 .304-.052.43-.158L7.6 1.638c.238-.178.56-.18.797-.003 1.468 1.1 6.505 5.54 6.505 5.54.28.237.702.203.94-.078.238-.28.203-.7-.078-.94z"/></g></svg></symbol><symbol id="next-orders-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><g><path d="M13.992 0H2.1C.94 0 0 .94 0 2.1v12.244C0 15.305.785 16 1.75 16H14.34c.964 0 1.658-.694 1.658-1.658V2.1C16 .94 15.15 0 13.992 0zM14 2v8h-1.757C11.28 10 10 11.28 10 12.243v.7c0 .193.337.057.144.057H5.247c-.193 0-.247.136-.247-.057v-.7C5 11.28 4.113 10 3.148 10H2V2h12zM7.117 9.963c.167.16.437.16.603.002l5.17-5.042c.165-.16.165-.422 0-.583l-.604-.583c-.166-.16-.437-.16-.603 0L7.42 7.924 5.694 6.24c-.166-.16-.437-.16-.603 0l-.604.582c-.166.162-.166.423 0 .584l2.63 2.557z"/></g></svg></symbol><symbol id="next-chevron-nav"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.6,6 L8.2,8 L12,12 L8.2,16 L10.6,18 L15.3,13 C15.8,12.4 15.8,11.6 15.3,11 L10.6,6 L10.6,6 Z"/></svg></symbol><symbol id="next-products-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><path d="M15.087 0H10.01c-.554 0-1.085.235-1.476.627L.3 8.87c-.37.368-.37.965 0 1.327l5.553 5.556c.362.368.955.37 1.323 0L15.4 7.52c.39-.392.6-.922.6-1.476V.967C16 .45 15.604 0 15.087 0zm-2.89 5.56c-.94 0-1.702-.764-1.702-1.703 0-.94.763-1.702 1.702-1.702.94 0 1.702.763 1.702 1.702 0 .94-.764 1.702-1.703 1.702z"/></svg></symbol><symbol id="next-customers-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><g><path d="M13.08 8.26c-.68-.275-.674-.732-.674-1.007 0-.274.29-.657.566-.903.48-.423.777-1.04.777-1.737 0-1.206-1.018-2.21-2.224-2.257-.896-.03-1.658.41-2.062 1.1-.088.15-.03.337.127.415 1.12.555 1.873 1.69 1.873 3.03 0 .87-.32 1.698-.894 2.332-.128.14-.077.362.094.442.663.31 2.044.745 2.598 1.462.055.07.134-.136.224-.136h1.657c.473 0 .857.116.857-.358v-.12c0-1.308-1.93-1.85-2.92-2.263zM5.398 9.232c-.542-.603-.827-1.39-.827-2.304 0-1.348.74-2.53 1.863-3.08.16-.077.22-.267.128-.418-.5-.816-1.523-1.265-2.634-.993-1.006.24-1.64 1.17-1.64 2.21 0 .698.223 1.28.71 1.704.273.247.6.63.6.904s-.035.73-.715 1.006C1.89 8.67 0 9.214 0 10.522v.12c0 .474.384.358.857.358h1.656c.09 0 .17.206.226.133.544-.716 1.905-1.277 2.56-1.59.167-.078.222-.173.098-.31zM9.867 10.546c-.68-.278-.78-.735-.78-1.006 0-.274.234-.656.508-.9.483-.426.754-1.046.754-1.74 0-1.492-1.39-2.55-2.957-2.184-1.018.237-1.672 1.168-1.672 2.212 0 .695.223 1.286.706 1.71.274.246.596.628.596.902 0 .27-.248.728-.927 1.006C5.11 10.954 3 11.5 3 12.806v.122C3 13.4 3.812 14 4.286 14h7.43c.472 0 1.284-.6 1.284-1.072v-.122c0-1.307-2.147-1.852-3.133-2.26z"/></g></svg></symbol><symbol id="next-reports-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><g><path d="M4 9.667C4 9.297 3.702 9 3.333 9H1.667C1.297 9 1 9.298 1 9.667v5.667c0 .368.298.666.667.666h1.667c.368 0 .666-.298.666-.667V9.667zM8 3.667C8 3.297 7.702 3 7.333 3H5.667C5.297 3 5 3.298 5 3.667v11.667c0 .368.298.666.667.666h1.667c.368 0 .666-.298.666-.667V3.667zM12 .667c0-.37-.298-.667-.667-.667H9.667C9.297 0 9 .298 9 .667v14.667c0 .368.298.666.667.666h1.667c.368 0 .666-.298.666-.667V.667zM16 6.667c0-.37-.298-.667-.667-.667h-1.667c-.368 0-.666.298-.666.667v8.667c0 .368.298.666.667.666h1.667c.368 0 .666-.298.666-.667V6.667z"/></g></svg></symbol><symbol id="next-discounts-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><g><path d="M9 13.333C9 13.15 8.85 13 8.667 13H6.333c-.184 0-.333.15-.333.333v.333c0 .185.15.334.333.334h2.333c.185 0 .334-.15.334-.333v-.334zM13 13.333c0-.184-.15-.333-.333-.333h-2.333c-.185 0-.334.15-.334.333v.333c0 .185.15.334.333.334h2.333c.185 0 .334-.15.334-.333v-.334zM16 8.333C16 8.15 15.85 8 15.667 8h-.333c-.185 0-.334.15-.334.333v2.333c0 .185.15.334.333.334h.333c.185 0 .334-.15.334-.333V8.333zM11.3 9.2L7.272 5.902 11.3 2.607l-.013-.016c-.692-.845-1.94-.97-2.786-.278l-2.808 2.3-1.18-.966c.096-.254.155-.526.155-.813C4.667 1.547 3.62.5 2.333.5S0 1.547 0 2.833s1.047 2.333 2.333 2.333c.255 0 .495-.05.725-.127l1.055.862-.93.763c-.265-.103-.55-.165-.85-.165C1.047 6.5 0 7.547 0 8.833s1.047 2.333 2.333 2.333 2.333-1.047 2.333-2.333c0-.246-.05-.478-.12-.7l1.145-.938L8.5 9.493c.846.692 2.094.568 2.786-.28L11.3 9.2zM1.333 2.832c0-.55.45-1 1-1s1 .45 1 1-.45 1-1 1-1-.448-1-1zm1 7c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1c0 .552-.448 1-1 1zM13 5.333C13 5.15 12.85 5 12.667 5h-2.333c-.185 0-.334.15-.334.333v.333c0 .185.15.334.333.334h2.333c.185 0 .334-.15.334-.333v-.334zM15.5 5h-1c-.276 0-.5 0-.5.5s.224.5.5.5h.5v.48c0 .275 0 .5.5.5s.5-.225.5-.5V5.5c0-.276-.063-.5-.5-.5zM3.5 14h1c.276 0 .5 0 .5-.5s-.224-.5-.5-.5H4v-.5c0-.276 0-.5-.5-.5s-.5.224-.5.5v.98c0 .275.062.52.5.52zM16 13.49v-1c0-.276 0-.5-.5-.5s-.5.224-.5.5V13h-.49c-.276 0-.5 0-.5.5s.224.5.5.5h.98c.276 0 .51-.073.51-.51z"/></g></svg></symbol><symbol id="next-add-circle-outline"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g><path d="M12 24c6.627 0 12-5.373 12-12s-5.373-12-12-12-12 5.373-12 12 5.373 12 12 12zm0-2.667c-5.155 0-9.333-4.179-9.333-9.333 0-5.155 4.179-9.333 9.333-9.333 5.155 0 9.333 4.179 9.333 9.333 0 5.155-4.179 9.333-9.333 9.333z"/><path d="M12.623 13.337h3.663c.394 0 .714-.32.714-.714v-1.246c0-.394-.32-.714-.714-.714h-3.663l.714.714v-3.663c0-.394-.32-.714-.714-.714h-1.246c-.394 0-.714.32-.714.714v3.663l.714-.714h-3.663c-.394 0-.714.32-.714.714v1.246c0 .394.32.714.714.714h3.663l-.714-.714v3.663c0 .394.32.714.714.714h1.246c.394 0 .714-.32.714-.714v-3.663l-.714.714z"/></g></svg></symbol><symbol id="next-online-store-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><path d="M8 0C3.6 0 0 3.6 0 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8zm0 14.1c-3.4 0-6.1-2.7-6.1-6.1 0-.9.2-1.8.6-2.6v.3c0 .2.3.5.3.7 0 .3.2.5.4.7.3.1.6.2.8.4.2.2.4.3.7.2.2.2.1.4 0 .6-.2.2-.3.4-.3.5-.1.3-.1.6.2.8.2.1.3.3.3.5s.2.4.3.5c.4.2.4.6.5 1 .1.8.7 2 .9 1.6.2-.3.6-.9.8-1.1.1-.1.2-.2.2-.3.1-.2.2-.4.4-.5.1-.1.2-.2.2-.3 0-.4.2-.8.4-1.1.4-.5.2-.8-.4-1-.3-.1-.7-.3-1.1-.1v-.2c.1-.5 0-.6-.5-.8-.2-.2-.4-.3-.6-.4-.2-.1-.5 0-.8-.1-.3.1-.2-.4-.5-.5-.6-.6.3-.8.7-.6.1.1.5-.5 1.3-1 .2 0 .1-1 .3-1-1.7-1-2-1.4-2-1.4h-.2c.9-.6 2-.9 3.2-.9h.6l-.1.1s-.5.3.1 1c.2.2.7.8.6.9 0 .2 1.4-.1 1.6-.1.4 0 .3.6 0 .7 0 .1-1.8.3-1.9.3-.3.4-.3.3-.2.7 0 .2-.1.3-.1.6.2.2.4.5.6.8.3.3.5.8.8.7.1 0 .2-.1.4-.2.1.1.3.4.5.5-.1.3 0 .5.2.8.1.1 0 .8-.1.9-.1.2 0 .6.2 1s.7.4.9 0l.7-1.9c.2-.4.5-.7.9-.9l.3-.1V8c.1 3.4-2.6 6.1-6 6.1z"/></svg></symbol><symbol id="next-pos-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M8.02-.05c-3.465 0-6.026 2.593-6.026 6.1 0 4.397 4.164 8.52 5.57 9.737.26.225.642.216.893-.02 1.386-1.306 5.587-5.742 5.587-9.718 0-3.507-2.56-6.1-6.025-6.1zm-.014 8.034c-1.11 0-2.008-.9-2.008-2.008s.9-2.008 2.008-2.008 2.008.9 2.008 2.008-.9 2.008-2.008 2.008z"/></svg></symbol><symbol id="next-phone-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M12.133 0H3.867C3.4 0 3 .4 3 .867v14.2c0 .533.4.933.867.933h8.2c.466 0 .933-.392.933-.858V.867C13 .4 12.6 0 12.133 0zM8 15c-.54 0-1-.46-1-1s.46-1 1-1 1 .46 1 1-.46 1-1 1zm3-3.25c0 .124-.133.25-.267.25H5.267C5.133 12 5 11.874 5 11.75v-9.5c0-.125.133-.25.267-.25h5.4c.2 0 .333.125.333.25v9.5z"/></svg></symbol><symbol id="next-apps-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><path d="M12.383 9.734c.59.41.882 1.044.87 1.675-.004.29.357.43.563.226l1.894-1.894c.387-.387.387-1.015 0-1.402l-2.498-2.498c-.167-.167-.115-.463.11-.54.397-.133.76-.396 1.02-.798.432-.662.416-1.56-.04-2.204-.734-1.033-2.175-1.123-3.03-.268-.216.216-.37.47-.463.74-.08.23-.387.28-.56.108L7.767.397C7.38.01 6.75.01 6.364.397L4.472 2.29c-.215.214-.05.565.257.565.504 0 1.013.192 1.4.58.87.87.765 2.34-.316 3.06-.663.443-1.568.435-2.216-.028-.576-.412-.86-1.04-.855-1.664.01-.29-.355-.43-.56-.224L.29 6.47c-.387.388-.387 1.016 0 1.403l2.498 2.498c.167.168.115.464-.11.54-.397.134-.76.397-1.02.8-.432.66-.416 1.56.04 2.203.734 1.033 2.175 1.123 3.03.268.216-.215.37-.47.463-.74.08-.23.387-.28.56-.107l2.483 2.484c.387.387 1.015.387 1.402 0l1.892-1.892c.215-.215.05-.564-.254-.563-.508 0-1.016-.193-1.404-.582-.86-.86-.768-2.304.278-3.037.658-.462 1.574-.466 2.235-.01z"/></svg></symbol><symbol id="next-settings-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><path d="M15.733 6.767l-1.77-.36c-.117-.025-.21-.112-.245-.227-.102-.323-.232-.636-.39-.935-.056-.107-.053-.234.013-.335l1-1.51c.086-.13.07-.304-.042-.415L13.02 1.707c-.114-.114-.292-.132-.426-.043l-1.504.995c-.1.066-.228.07-.335.013-.3-.158-.61-.288-.935-.39-.114-.037-.202-.13-.226-.247l-.36-1.77C9.2.113 9.063 0 8.906 0H7.093c-.158 0-.295.11-.326.267l-.36 1.77c-.025.117-.113.21-.227.245-.323.102-.636.232-.935.39-.107.056-.234.053-.335-.013l-1.504-.996c-.134-.09-.312-.07-.426.043L1.702 2.985c-.11.11-.128.284-.042.415l1 1.51c.066.1.07.228.012.335-.158.3-.288.612-.39.935-.036.114-.128.202-.246.226l-1.77.36C.113 6.8 0 6.937 0 7.094v1.813c0 .158.11.295.267.327l1.77.36c.117.025.21.112.245.227.102.323.232.636.39.935.056.107.053.234-.013.335l-.996 1.504c-.09.134-.07.312.043.426l1.273 1.273c.114.114.292.132.426.043l1.504-.995c.1-.066.228-.07.335-.012.3.158.61.288.935.39.115.036.202.128.226.246l.36 1.77c.032.155.17.266.327.266h1.813c.158 0 .295-.11.327-.267l.36-1.77c.025-.117.112-.21.227-.245.323-.102.636-.232.935-.39.107-.056.234-.053.335.013l1.504.996c.134.09.312.07.426-.043l1.273-1.273c.114-.114.132-.292.043-.426l-.995-1.504c-.066-.1-.07-.228-.012-.335.158-.3.288-.61.39-.935.036-.115.128-.202.246-.226l1.77-.36c.155-.032.266-.17.266-.327V7.093c0-.158-.112-.295-.267-.326zM10.667 8c0 1.473-1.193 2.667-2.667 2.667S5.333 9.473 5.333 8c0-1.473 1.193-2.667 2.667-2.667S10.667 6.527 10.667 8z"/></svg></symbol><symbol id="next-menu-16"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" enable-background="new 0 0 16 16"><path d="M7 9H1c-.552 0-1-.114-1-.667v-.666C0 7.114.448 7 1 7h14c.552 0 1 .114 1 .667v.667c0 .552-.448.666-1 .666H7zM7 4H1c-.552 0-1-.114-1-.667v-.666C0 2.114.448 2 1 2h14c.552 0 1 .114 1 .667v.667c0 .552-.448.666-1 .666H7zM7 14H1c-.552 0-1-.114-1-.667v-.667C0 12.114.448 12 1 12h14c.552 0 1 .114 1 .667v.667c0 .552-.448.666-1 .666H7z"/></svg></symbol><symbol id="next-delete"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" enable-background="new 0 0 12 12"><path d="M12 2c0 .5-.4 1-.8 1H.8C.4 3 0 2.5 0 2s.4-1 .8-1H4c0-.5.7-1 1.2-1h1.6C7.3 0 8 .6 8 1h3.2c.4 0 .8.5.8 1zm-1 2.6v6.6c0 .4-.8.8-1.2.8H2.2c-.4 0-1.2-.3-1.2-.8V4.6c0-.1.5-.6.7-.6h8.7c.1 0 .6.5.6.6zM5 6.4c0-.2-.2-.4-.4-.4h-.2c-.2 0-.4.2-.4.4v3.2c0 .2.2.4.4.4h.2c.2 0 .4-.2.4-.4V6.4zm3 0c0-.2-.2-.4-.4-.4h-.2c-.2 0-.4.2-.4.4v3.2c0 .2.2.4.4.4h.2c.2 0 .4-.2.4-.4V6.4z"/></svg></symbol><symbol id="next-checkmark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" enable-background="new 0 0 24 24"><path d="M23.6 5L22 3.4c-.5-.4-1.2-.4-1.7 0L8.5 15l-4.8-4.7c-.5-.4-1.2-.4-1.7 0L.3 11.9c-.5.4-.5 1.2 0 1.6l7.3 7.1c.5.4 1.2.4 1.7 0l14.3-14c.5-.4.5-1.1 0-1.6z"/></svg></symbol><symbol id="next-subtract"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" enable-background="new 0 0 12 12"><path d="M6 0"/><path d="M.8 7C.3 7 0 6.7 0 6.2v-.4c0-.5.3-.8.8-.8h10.5c.4 0 .7.3.7.8v.5c0 .4-.3.7-.8.7H.8z"/></svg></symbol><symbol id="next-chevron"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M6 4l9 8-9 8 2 2 11-10L8 2 6 4" fill="currentColor"/></svg></symbol></svg></div>
+  <div id="partial-icon-symbols" data-tg-refresh="partial-icon-symbols" data-tg-refresh-always="true" style="display: none;"></div>
+
+  <script>
+// Important The user is logged in, set to user_id; else, set to ''
+var _user_id = '11035152'
+
+// IMPORTANT! Set to a unique session ID for the visitor's current browsing session.
+var _session_id = '694bb5d401184aef1123647738f9190a8b2853c6daabcc49186c73ba17aaf30e';
+
+var _sift = window._sift = window._sift || [];
+
+// IMPORTANT! Insert your JavaScript snippet key here!
+_sift.push(['_setAccount', 'dba93e6d07']);
+_sift.push(['_setUserId', _user_id]);
+_sift.push(['_setSessionId', _session_id]);
+_sift.push(['_trackPageview']);
+</script>
+
+<script src="//cdn.shopify.com/s/assets/sift_tracking-36fcf3ccecfa0d4cfae6fc60d9c3507cdd6e0eb64b197cf6876a4a10b914d5b2.js" crossorigin="anonymous" integrity="sha256-NvzzzOz6DUz65vxg2cNQfN1uDrZLGXz2h2pKELkU1bI="></script>
+
+
+</body>
+</html>

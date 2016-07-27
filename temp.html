@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>React App</title>
+    <link rel="stylesheet" media="all" href="//cdn.shopify.com/s/assets/admin/style-4c06f1441ab99e67cb05a7e395c7d8ec4ffbe3e694398f4cf2dce5d442dd7c29.css" crossorigin="anonymous" data-turbolinks-track="true" integrity="sha256-TAbxRBq5nmfLBafjlcfY7E/74+aUOY9M8tzl1ELdfCk=">
+    <link rel="stylesheet" media="print" href="//cdn.shopify.com/s/assets/admin/print-53ef50143230c84fe7af77612901bab82abe2a49b97f64c7e78e71e6c9a7eaf7.css" crossorigin="anonymous" data-turbolinks-track="true" integrity="sha256-U+9QFDIwyE/nr3dhKQG6uCq+Kkm5f2TH545x5smn6vc=">
+  </head>
+  <body>
+    <section class="ui-annotated-section "><div class="ui-annotated-section__annotation"><div class="ui-annotated-section__title"><h2 class="next-heading next-heading--no-margin">Store address</h2></div><div class="ui-annotated-section__description"><p>This address will appear on your invoices. You can edit the address used to calculate shipping rates in your <a href="/admin/settings/shipping">shipping settings</a>.</p></div></div><div class="ui-annotated-section__content">
+        <div class="next-card">
+          <div class="section-content">
+            <div class="next-card__section">
+              <div class="ui-form__section">
+                <div class="next-input-wrapper"><label class="next-label" for="shop_company_name">Legal name of business</label><input class="next-input" size="30" type="text" value="Patagonia Brewing Company" name="shop[company_name]" id="shop_company_name"></div>
+                <div class="next-input-wrapper"><label class="next-label" for="shop_phone">Phone</label><input class="next-input" size="30" type="tel" value="+16268448140" name="shop[phone]" id="shop_phone"></div>
+                <div class="next-input-wrapper"><label class="next-label" for="shop_address1">Street</label><input class="next-input" size="30" type="text" value="Virrey Cevallos 648" name="shop[address1]" id="shop_address1"></div>
+                <div class="next-input-wrapper"><label class="next-label" for="shop_address2">Apt, suite, etc. (optional)</label><input class="next-input" size="30" type="text" value="" name="shop[address2]" id="shop_address2"></div>
+
+                 <div class="ui-form__group">
+                   <div class="next-input-wrapper"><label class="next-label" for="shop_city">City</label><input class="next-input" size="30" type="text" value="Buenos Aires" name="shop[city]" id="shop_city"></div>
+                   <div class="next-input-wrapper"><label class="next-label" for="shop_zip">Postal / ZIP code</label><input class="next-input" size="30" type="text" value="C1077AAN CABA" name="shop[zip]" id="shop_zip"></div>
+    </div>
+                 <div class="ui-form__group" define="{address: new Shopify.AddressOperations(this, &quot;Buenos Aires&quot;)}">
+                   <div class="next-input-wrapper"><label class="next-label" for="shop_country">Country</label><div class="next-select__wrapper next-input--has-content"><svg class="next-icon next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-chevron-down"></use></svg></div></div>
+
+                   <div bind-show="address.hasProvinces" class="next-input-wrapper"><label bind="address.regionDescriptor" class="next-label" for="shop_province">Province</label><div class="next-select__wrapper next-input--has-content"><select class="next-select js-province-select" name="shop[province]" id="shop_province"><option value="Buenos Aires" data-code="B">Buenos Aires</option><option value="Catamarca" data-code="K">Catamarca</option><option value="Chaco" data-code="H">Chaco</option><option value="Chubut" data-code="U">Chubut</option><option value="Ciudad Autónoma de Buenos Aires" data-code="C">Ciudad Autónoma de Buenos Aires</option><option value="Córdoba" data-code="X">Córdoba</option><option value="Corrientes" data-code="W">Corrientes</option><option value="Ente Ríos" data-code="E">Ente Ríos</option><option value="Formosa" data-code="P">Formosa</option><option value="Jujuy" data-code="Y">Jujuy</option><option value="La Pampa" data-code="L">La Pampa</option><option value="La Rioja" data-code="F">La Rioja</option><option value="Mendoza" data-code="M">Mendoza</option><option value="Misiones" data-code="N">Misiones</option><option value="Neuquén" data-code="Q">Neuquén</option><option value="Río Negro" data-code="R">Río Negro</option><option value="Salta" data-code="A">Salta</option><option value="San Juan" data-code="J">San Juan</option><option value="San Luis" data-code="D">San Luis</option><option value="Santa Cruz" data-code="Z">Santa Cruz</option><option value="Santa Fe" data-code="S">Santa Fe</option><option value="Santiago Del Estero" data-code="G">Santiago Del Estero</option><option value="Tierra Del Fuego" data-code="V">Tierra Del Fuego</option><option value="Tucumán" data-code="T">Tucumán</option></select><svg class="next-icon next-icon--size-12"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#next-chevron-down"></use></svg></div></div>
+    </div></div>        </div>
+          </div>
+        </div>
+    </div></section>
+  </body>
+</html>
